@@ -287,8 +287,8 @@ if (view = 1 and fire = 1) or display &gt; 0
           <argument>
             <kind>1</kind>
             <string>///Intialization
-ox = lengthdir_x(3,angle)
-oy = lengthdir_y(3,angle)
+ox = lengthdir_x(14,angle)
+oy = lengthdir_y(14,angle)
 draw_dist = 0
 col_dist = 0
 max_dist = 0

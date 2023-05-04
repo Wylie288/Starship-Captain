@@ -15,20 +15,20 @@
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
-    <isSet>0</isSet>
-    <w>0</w>
-    <h>0</h>
-    <showGrid>0</showGrid>
-    <showObjects>0</showObjects>
-    <showTiles>0</showTiles>
-    <showBackgrounds>0</showBackgrounds>
-    <showForegrounds>0</showForegrounds>
+    <isSet>-1</isSet>
+    <w>1016</w>
+    <h>600</h>
+    <showGrid>-1</showGrid>
+    <showObjects>-1</showObjects>
+    <showTiles>-1</showTiles>
+    <showBackgrounds>-1</showBackgrounds>
+    <showForegrounds>-1</showForegrounds>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
-    <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>0</xoffset>
-    <yoffset>0</yoffset>
+    <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
+    <page>1</page>
+    <xoffset>329</xoffset>
+    <yoffset>788</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="back_space" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -101,7 +101,7 @@
     <instance objName="obj_wall128" x="2688" y="3840" name="inst_6142DE21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall128" x="2688" y="3776" name="inst_55319354" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall128" x="2752" y="3520" name="inst_3CD0A4EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_pole2" x="2304" y="3936" name="inst_DB12240C" locked="0" code="phy_speed_x = 5&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pole2" x="2304" y="3936" name="inst_DB12240C" locked="0" code="phy_speed_x = 5" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_battery" x="1568" y="3648" name="inst_76675357" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_45_4" x="3456" y="4096" name="inst_EB793262" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_45_4" x="3584" y="3968" name="inst_96E810AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -119,7 +119,7 @@
     <instance objName="obj_laser_mount_top" x="3648" y="4032" name="inst_45265BA4" locked="0" code="count_on = 60&#xA;count_off = 60&#xA;fire = 0&#xA;angle = 270" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_laser_mount_top" x="3904" y="4288" name="inst_B9539457" locked="0" code="count_on = 60&#xA;count_off = 60&#xA;fire = 0&#xA;angle = 90" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_battery" x="4128" y="4032" name="inst_4E77FD29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block" x="1952" y="5312" name="inst_7446F886" locked="0" code="phy_speed_y = 4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block" x="1952" y="5312" name="inst_7446F886" locked="0" code="phy_speed_y = 4" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_laser_mount_top" x="1600" y="4096" name="inst_C4A585D5" locked="0" code="count_on = 9999&#xA;count_off = 1&#xA;fire = 1&#xA;angle = 0&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_laser_mount_top" x="1600" y="3712" name="inst_CA49ED51" locked="0" code="count_on = 9999&#xA;count_off = 1&#xA;fire = 1&#xA;angle = 0&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall256" x="1344" y="4672" name="inst_27C94743" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

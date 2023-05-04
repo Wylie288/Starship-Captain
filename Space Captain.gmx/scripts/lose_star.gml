@@ -16,8 +16,8 @@ if instance_exists(obj_game_over) != 1
     {
         if global.die = 0
         {
-            stars -= 1
-            instance_create(0,0,obj_game_over)
+            stars = 0
+            //instance_create(0,0,obj_game_over)
         }
     }
 }

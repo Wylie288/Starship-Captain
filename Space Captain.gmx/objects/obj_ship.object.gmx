@@ -97,6 +97,9 @@ ini_open(global.sandbox_ship_file)
     ini_write_real(string(global.ship),string(global.ship),1)
 ini_close()
 
+global.checkpointX = x
+global.checkpointY = y
+
 </string>
           </argument>
         </arguments>
@@ -537,6 +540,11 @@ if global.zone != 0
     if collision_counter = 0
     {
         lose_star()
+        phy_position_x = global.checkpointX
+        phy_position_y = global.checkpointY
+        phy_speed_x = 0
+        phy_speed_y = 0
+        phy_angular_velocity = 0
     }
 }
 else

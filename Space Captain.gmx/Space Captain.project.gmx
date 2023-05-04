@@ -4,7 +4,7 @@
     <Config>Configs\Default</Config>
     <Config>Configs\DevBuild</Config>
   </Configs>
-  <datafiles number="12" name="datafiles">
+  <datafiles number="15" name="datafiles">
     <datafile>
       <name>Filter_Words.txt</name>
       <exists>-1</exists>
@@ -24,206 +24,6 @@
         </Config>
       </ConfigOptions>
       <filename>Filter_Words.txt</filename>
-    </datafile>
-    <datafile>
-      <name>netlog.gmez</name>
-      <exists>-1</exists>
-      <size>1614</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-        <Config name="DevBuild">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>netlog.gmez</filename>
-    </datafile>
-    <datafile>
-      <name>GMLiveHelper.gmez</name>
-      <exists>-1</exists>
-      <size>33494</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-        <Config name="DevBuild">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>GMLiveHelper.gmez</filename>
-    </datafile>
-    <datafile>
-      <name>std.ndll</name>
-      <exists>-1</exists>
-      <size>116224</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-        <Config name="DevBuild">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>std.ndll</filename>
-    </datafile>
-    <datafile>
-      <name>regexp.ndll</name>
-      <exists>-1</exists>
-      <size>111616</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-        <Config name="DevBuild">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>regexp.ndll</filename>
-    </datafile>
-    <datafile>
-      <name>neko.dll</name>
-      <exists>-1</exists>
-      <size>101888</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-        <Config name="DevBuild">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>neko.dll</filename>
-    </datafile>
-    <datafile>
-      <name>gmlive-server.n</name>
-      <exists>-1</exists>
-      <size>140364</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-        <Config name="DevBuild">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>gmlive-server.n</filename>
-    </datafile>
-    <datafile>
-      <name>gmlive.html</name>
-      <exists>-1</exists>
-      <size>46102</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-        <Config name="DevBuild">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>gmlive.html</filename>
-    </datafile>
-    <datafile>
-      <name>gc.dll</name>
-      <exists>-1</exists>
-      <size>81920</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-        <Config name="DevBuild">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>gc.dll</filename>
-    </datafile>
-    <datafile>
-      <name>gmlive-server.exe</name>
-      <exists>-1</exists>
-      <size>152148</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-        <Config name="DevBuild">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>gmlive-server.exe</filename>
-    </datafile>
-    <datafile>
-      <name>netlog.exe</name>
-      <exists>-1</exists>
-      <size>54272</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-        <Config name="DevBuild">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>netlog.exe</filename>
     </datafile>
     <datafile>
       <name>D3DX9_43.dll</name>
@@ -250,11 +50,7 @@
     <extension index="0">extensions\Haptics</extension>
     <extension index="1">extensions\Draw Masked Sprites</extension>
     <extension index="2">extensions\Regular Expressions</extension>
-    <extension index="3">extensions\GMLive</extension>
-    <extension index="4">extensions\netlog</extension>
-    <extension index="5">extensions\GMLiveHelper</extension>
     <extension index="6">extensions\Free Shaders</extension>
-    <extension index="7">extensions\Physics Rope, Chain and Bridge</extension>
   </NewExtensions>
   <sounds name="sound">
     <sound>sound\sound1</sound>
@@ -355,6 +151,7 @@
         <sprite>sprites\spr_pole2</sprite>
         <sprite>sprites\spr_block</sprite>
         <sprite>sprites\spr_block_vert</sprite>
+        <sprite>sprites\spr_block_small</sprite>
         <sprite>sprites\spr_player_block</sprite>
         <sprite>sprites\spr_asteroid</sprite>
         <sprite>sprites\spr_asteroid_large</sprite>
@@ -364,7 +161,9 @@
       </sprites>
       <sprites name="Objectives">
         <sprite>sprites\spr_finish_area</sprite>
+        <sprite>sprites\spr_checkpoint</sprite>
         <sprite>sprites\spr_finish_area2</sprite>
+        <sprite>sprites\spr_checkpoint2</sprite>
         <sprite>sprites\spr_target</sprite>
         <sprite>sprites\spr_target_4</sprite>
         <sprite>sprites\spr_target_2</sprite>
@@ -652,6 +451,8 @@
         <object>objects\obj_pole2</object>
         <object>objects\obj_block</object>
         <object>objects\obj_block_hor</object>
+        <object>objects\obj_block_small</object>
+        <object>objects\obj_block_small_hor</object>
         <object>objects\obj_player_block</object>
         <object>objects\obj_asteroid</object>
         <object>objects\obj_asteroid_large</object>
@@ -663,6 +464,8 @@
       <objects name="Objectives">
         <object>objects\obj_physics_sensor</object>
         <object>objects\obj_docking_area_large</object>
+        <object>objects\obj_checkpoint</object>
+        <object>objects\obj_checkpoint_large</object>
         <object>objects\obj_target</object>
         <object>objects\obj_target2</object>
         <object>objects\obj_target_3</object>
@@ -878,7 +681,6 @@
       <object>objects\obj_magnetic_field</object>
     </objects>
     <object>objects\obj_menu_laser_block</object>
-    <object>objects\obj_gmlive</object>
     <objects name="Editor">
       <object>objects\obj_level_editor_control</object>
       <object>objects\obj_placement_preview</object>
@@ -910,64 +712,7 @@
       <room>rooms\rm_sandbox4</room>
     </rooms>
     <rooms name="Beginner">
-      <room>rooms\rm_1_1</room>
-      <room>rooms\rm_1_2</room>
-      <room>rooms\rm_1_3</room>
       <room>rooms\rm_1_4</room>
-      <room>rooms\rm_1_5</room>
-      <room>rooms\rm_1_6</room>
-      <room>rooms\rm_1_7</room>
-      <room>rooms\rm_1_8</room>
-      <room>rooms\rm_1_9</room>
-      <room>rooms\rm_1_10</room>
-      <room>rooms\rm_1_11</room>
-      <room>rooms\rm_1_12</room>
-      <room>rooms\rm_1_13</room>
-      <room>rooms\rm_1_14</room>
-      <room>rooms\rm_1_15t</room>
-      <room>rooms\rm_1_15</room>
-      <room>rooms\rm_1_12tt</room>
-      <room>rooms\rm_1_12t</room>
-      <room>rooms\rm_1_13t</room>
-      <room>rooms\rm_1_16</room>
-      <room>rooms\rm_1_17</room>
-      <room>rooms\rm_1_18</room>
-      <room>rooms\rm_1_19</room>
-      <room>rooms\rm_1_20</room>
-      <room>rooms\rm_1_5t</room>
-      <room>rooms\rm_1_9t</room>
-      <room>rooms\rm_1_9old</room>
-      <room>rooms\rm_1_4t</room>
-    </rooms>
-    <rooms name="Intermediate">
-      <room>rooms\rm_2_1</room>
-      <room>rooms\rm_2_1t</room>
-      <room>rooms\rm_2_2</room>
-      <room>rooms\rm_2_3</room>
-      <room>rooms\rm_2_4</room>
-      <room>rooms\rm_2_5</room>
-      <room>rooms\rm_2_6</room>
-      <room>rooms\rm_2_7</room>
-      <room>rooms\rm_2_3t</room>
-      <room>rooms\rm_2_4t</room>
-      <room>rooms\rm_2_5t</room>
-      <room>rooms\rm_2_6t</room>
-      <room>rooms\rm_2_7t</room>
-      <room>rooms\rm_2_8t</room>
-      <room>rooms\rm_2_9t</room>
-      <room>rooms\rm_2_11t</room>
-      <room>rooms\rm_2_13t</room>
-      <room>rooms\rm_100_1</room>
-      <room>rooms\rm_100_2</room>
-      <room>rooms\rm_100_3</room>
-      <room>rooms\rm_3_1</room>
-      <room>rooms\rm_3_2</room>
-      <room>rooms\rm_3_3</room>
-      <room>rooms\rm_3_4</room>
-      <room>rooms\rm_3_5</room>
-      <room>rooms\rm_t1</room>
-      <room>rooms\rm_t2</room>
-      <room>rooms\rm_t4</room>
     </rooms>
     <rooms name="Archive">
       <room>rooms\rm_menu</room>
@@ -975,6 +720,65 @@
       <room>rooms\rm_menu_tut</room>
       <room>rooms\rm_pause</room>
       <room>rooms\Prototype_Level</room>
+      <rooms name="Beginner">
+        <room>rooms\rm_1_1</room>
+        <room>rooms\rm_1_2</room>
+        <room>rooms\rm_1_3</room>
+        <room>rooms\rm_1_5</room>
+        <room>rooms\rm_1_6</room>
+        <room>rooms\rm_1_7</room>
+        <room>rooms\rm_1_8</room>
+        <room>rooms\rm_1_9</room>
+        <room>rooms\rm_1_10</room>
+        <room>rooms\rm_1_11</room>
+        <room>rooms\rm_1_12</room>
+        <room>rooms\rm_1_13</room>
+        <room>rooms\rm_1_14</room>
+        <room>rooms\rm_1_15t</room>
+        <room>rooms\rm_1_15</room>
+        <room>rooms\rm_1_12tt</room>
+        <room>rooms\rm_1_12t</room>
+        <room>rooms\rm_1_13t</room>
+        <room>rooms\rm_1_16</room>
+        <room>rooms\rm_1_17</room>
+        <room>rooms\rm_1_18</room>
+        <room>rooms\rm_1_19</room>
+        <room>rooms\rm_1_20</room>
+        <room>rooms\rm_1_5t</room>
+        <room>rooms\rm_1_9t</room>
+        <room>rooms\rm_1_9old</room>
+        <room>rooms\rm_1_4t</room>
+      </rooms>
+      <rooms name="Intermediate">
+        <room>rooms\rm_2_1</room>
+        <room>rooms\rm_2_1t</room>
+        <room>rooms\rm_2_2</room>
+        <room>rooms\rm_2_3</room>
+        <room>rooms\rm_2_4</room>
+        <room>rooms\rm_2_5</room>
+        <room>rooms\rm_2_6</room>
+        <room>rooms\rm_2_7</room>
+        <room>rooms\rm_2_3t</room>
+        <room>rooms\rm_2_4t</room>
+        <room>rooms\rm_2_5t</room>
+        <room>rooms\rm_2_6t</room>
+        <room>rooms\rm_2_7t</room>
+        <room>rooms\rm_2_8t</room>
+        <room>rooms\rm_2_9t</room>
+        <room>rooms\rm_2_11t</room>
+        <room>rooms\rm_2_13t</room>
+        <room>rooms\rm_100_1</room>
+        <room>rooms\rm_100_2</room>
+        <room>rooms\rm_100_3</room>
+        <room>rooms\rm_3_1</room>
+        <room>rooms\rm_3_2</room>
+        <room>rooms\rm_3_3</room>
+        <room>rooms\rm_3_4</room>
+        <room>rooms\rm_3_5</room>
+        <room>rooms\rm_t1</room>
+        <room>rooms\rm_t2</room>
+        <room>rooms\rm_t4</room>
+      </rooms>
     </rooms>
     <room>rooms\rm_ui_editor</room>
     <room>rooms\rm_level_editor</room>
