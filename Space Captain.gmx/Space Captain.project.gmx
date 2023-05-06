@@ -50,7 +50,7 @@
     <extension index="0">extensions\Haptics</extension>
     <extension index="1">extensions\Draw Masked Sprites</extension>
     <extension index="2">extensions\Regular Expressions</extension>
-    <extension index="6">extensions\Free Shaders</extension>
+    <extension index="3">extensions\Free Shaders</extension>
   </NewExtensions>
   <sounds name="sound">
     <sound>sound\sound1</sound>
@@ -278,6 +278,7 @@
     <sprite>sprites\sprite149</sprite>
     <sprite>sprites\sprite150</sprite>
     <sprite>sprites\spr_preview</sprite>
+    <sprite>sprites\spr_gravityField</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_space</background>
@@ -286,6 +287,7 @@
     <background>background\back_grate</background>
     <background>background\back_window1</background>
     <background>background\back_window2</background>
+    <background>background\tile_GravLineHor</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -688,6 +690,7 @@
       <object>objects\obj_goal_editor</object>
       <object>objects\obj_editor_object</object>
     </objects>
+    <object>objects\obj_gravityField</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game_start</room>
@@ -712,7 +715,7 @@
       <room>rooms\rm_sandbox4</room>
     </rooms>
     <rooms name="Beginner">
-      <room>rooms\rm_1_4</room>
+      <room>rooms\rm_Beginner1</room>
     </rooms>
     <rooms name="Archive">
       <room>rooms\rm_menu</room>

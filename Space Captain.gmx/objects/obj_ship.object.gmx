@@ -214,6 +214,34 @@ if collision_line( phy_position_x, phy_position_y, phy_position_x, phy_position_
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Gravity Field
+if place_meeting(phy_position_x,phy_position_y,obj_gravityField)
+{
+    gravityScale = 9
+    field = instance_nearest(phy_position_x,phy_position_y,obj_gravityField)
+    global.grav = field.mag * gravityScale
+    global.grav_dir = field.dir
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Electric Field
 if place_meeting(phy_position_x,phy_position_y,obj_electric)
 {

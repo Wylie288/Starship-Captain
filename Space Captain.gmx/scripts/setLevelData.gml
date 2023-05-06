@@ -25,8 +25,8 @@ if global.zone = 100
     levelData100()
 
 #define levelData1
-global.levelData[1,ldROOM] = rm_1_1
-global.levelData[1,ldSHIP] = "1"
+global.levelData[1,ldROOM] = rm_Beginner1
+global.levelData[1,ldSHIP] = "3"
 global.levelData[1,ldLTIME] = 5.509
 global.levelData[1,ldGRAV] = 0
 global.levelData[1,ldDIR] = -1
@@ -55,7 +55,7 @@ global.levelData[3,ldDAM] = 0
 global.levelData[3,ldHP] = 1 
 global.levelData[3,ldTAR] = 3
 
-global.levelData[4,ldROOM] = rm_1_4
+global.levelData[4,ldROOM] = rm_1_1
 global.levelData[4,ldSHIP] = "3"
 global.levelData[4,ldLTIME] = 9.779
 global.levelData[4,ldGRAV] = 0
