@@ -76,16 +76,18 @@ sprite_delete(sprite_index);
             <kind>1</kind>
             <string>if texture = 0
 {
-    if distance_to_object(obj_ship) &lt; 2500 or room = rm_start_windows or room = rm_level_editor
+    if distance_to_object(obj_ship) &lt; 1400 or room = rm_start_windows or room = rm_level_editor
+    {
         scr_clipping()
+         texture = 1
+    }
     //scr_clipping_side()
-    texture = 1
 }
 
 //sprite_delete(sprite_index);
 //draw_sprite(side,0,x,y+32)
 draw_self()
-event_inherited()
+//event_inherited()
 </string>
           </argument>
         </arguments>

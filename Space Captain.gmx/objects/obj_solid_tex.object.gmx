@@ -57,7 +57,7 @@ draw_set_alpha(1)
 if !place_meeting(x,y+64,obj_wall)
     clip_side()
 */
-if distance_to_object(obj_ship) &lt; 2500 or room = rm_start_windows or room = rm_level_editor
+if distance_to_object(obj_ship) &lt; 1400 or room = rm_start_windows or room = rm_level_editor
     clip_square()
     
 event_inherited()

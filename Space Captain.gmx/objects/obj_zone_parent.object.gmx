@@ -193,7 +193,8 @@ if clicked = 1
     plat = 0
     with(obj_zone_parent)
           if pla &gt; 0
-            other.plat = 1  
+            other.plat = 1
+
     if plat = 0
     {
         x1 = 112

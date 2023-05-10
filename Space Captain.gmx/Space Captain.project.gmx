@@ -288,6 +288,8 @@
     <background>background\back_window1</background>
     <background>background\back_window2</background>
     <background>background\tile_GravLineHor</background>
+    <background>background\tile_GravLineVert</background>
+    <background>background\spr_SpaceFill</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

@@ -283,7 +283,7 @@ if time_start = 0
 
 if time_start = 1
 {
-    global.delta = 60/1000000*delta_time
+    global.delta = delta_time / 1000000//60/1000000*delta_time
     
     if !instance_exists(obj_win) and !instance_exists(obj_game_over)
     global.timer += 1/60 * global.delta
