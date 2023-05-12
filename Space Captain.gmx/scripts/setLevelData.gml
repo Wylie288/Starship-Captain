@@ -35,15 +35,15 @@ global.levelData[1,ldDAM] = 0
 global.levelData[1,ldHP] = 0 
 global.levelData[1,ldTAR] = 0
 
-global.levelData[2,ldROOM] = rm_1_2
-global.levelData[2,ldSHIP] = "1"
+global.levelData[2,ldROOM] = rm_Beginner2
+global.levelData[2,ldSHIP] = "5"
 global.levelData[2,ldLTIME] = 15.799
 global.levelData[2,ldGRAV] = 0
 global.levelData[2,ldDIR] = -1
 global.levelData[2,ldPRES] = 0
 global.levelData[2,ldDAM] = 0 
-global.levelData[2,ldHP] = 0 
-global.levelData[2,ldTAR] = 0
+global.levelData[2,ldHP] = 3
+global.levelData[2,ldTAR] = 4
 
 global.levelData[3,ldROOM] = rm_1_3
 global.levelData[3,ldSHIP] = "2"

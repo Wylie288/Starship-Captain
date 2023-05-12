@@ -718,6 +718,7 @@
     </rooms>
     <rooms name="Beginner">
       <room>rooms\rm_Beginner1</room>
+      <room>rooms\rm_Beginner2</room>
     </rooms>
     <rooms name="Archive">
       <room>rooms\rm_menu</room>
