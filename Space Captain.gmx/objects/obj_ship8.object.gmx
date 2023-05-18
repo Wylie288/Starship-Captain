@@ -49,7 +49,7 @@ event_inherited()
           <argument>
             <kind>1</kind>
             <string>///Initialize
-force = 2000
+force = 3000
 thrusters_sprite = spr_ship8
 </string>
           </argument>

@@ -42,18 +42,18 @@ global.levelData[2,ldGRAV] = 0
 global.levelData[2,ldDIR] = -1
 global.levelData[2,ldPRES] = 0
 global.levelData[2,ldDAM] = 0 
-global.levelData[2,ldHP] = 3
+global.levelData[2,ldHP] = 2
 global.levelData[2,ldTAR] = 4
 
-global.levelData[3,ldROOM] = rm_1_3
-global.levelData[3,ldSHIP] = "2"
+global.levelData[3,ldROOM] = rm_Beginner3
+global.levelData[3,ldSHIP] = "7"
 global.levelData[3,ldLTIME] = 10.619
-global.levelData[3,ldGRAV] = 9
-global.levelData[3,ldDIR] = 270
+global.levelData[3,ldGRAV] = 0
+global.levelData[3,ldDIR] = 0
 global.levelData[3,ldPRES] = 0
 global.levelData[3,ldDAM] = 0 
-global.levelData[3,ldHP] = 1 
-global.levelData[3,ldTAR] = 3
+global.levelData[3,ldHP] = 3
+global.levelData[3,ldTAR] = 7
 
 global.levelData[4,ldROOM] = rm_1_1
 global.levelData[4,ldSHIP] = "3"

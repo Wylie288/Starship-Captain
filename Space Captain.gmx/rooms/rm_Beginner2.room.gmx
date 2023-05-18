@@ -417,9 +417,9 @@
     <instance objName="obj_block_small" x="3584" y="1664" name="inst_21DE873B" locked="0" code="phy_speed_y = 4.5&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_small" x="4032" y="1664" name="inst_98CEA8CB" locked="0" code="phy_speed_y = 3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gravityField" x="1856" y="5312" name="inst_DB0B2E56" locked="0" code="mag = 0&#xA;dir = 0&#xA;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_gravityField" x="1728" y="5312" name="inst_7E49A984" locked="0" code="mag = 1&#xA;dir = 270&#xA;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_gravityField" x="1728" y="5312" name="inst_7E49A984" locked="0" code="mag = 1&#xA;dir = 270" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_gravityField" x="2112" y="6080" name="inst_CFF74EDC" locked="0" code="mag = 0&#xA;dir = 0&#xA;" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_gravityField" x="2112" y="6208" name="inst_49D15BFA" locked="0" code="mag = 1&#xA;dir = 270&#xA;" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_gravityField" x="2112" y="6208" name="inst_49D15BFA" locked="0" code="mag = 1&#xA;dir = 270" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall512" x="1536" y="2112" name="inst_DFBAF6F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall512" x="1536" y="1600" name="inst_C53DBA40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall512" x="1088" y="1600" name="inst_80DA4E5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

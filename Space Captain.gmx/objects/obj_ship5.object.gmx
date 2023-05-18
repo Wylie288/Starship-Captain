@@ -88,7 +88,7 @@ physics_fixture_bind(ship,self)
           <argument>
             <kind>1</kind>
             <string>///Initialization
-force = 2000
+force = 3000
 thrusters_sprite = spr_ship5
 
 

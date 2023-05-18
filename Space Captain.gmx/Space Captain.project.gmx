@@ -80,11 +80,11 @@
         <sprite>sprites\spr_ship5</sprite>
         <sprite>sprites\spr_ship6</sprite>
         <sprite>sprites\spr_ship4</sprite>
-        <sprite>sprites\spr_ship8</sprite>
         <sprite>sprites\spr_ship7</sprite>
+        <sprite>sprites\spr_ship8</sprite>
         <sprite>sprites\spr_ship9</sprite>
-        <sprite>sprites\spr_ship13</sprite>
         <sprite>sprites\spr_ship12</sprite>
+        <sprite>sprites\spr_ship13</sprite>
         <sprite>sprites\spr_ship13_s</sprite>
         <sprite>sprites\spr_ship15</sprite>
         <sprite>sprites\spr_ship16</sprite>
@@ -460,7 +460,10 @@
         <object>objects\obj_block_small_hor</object>
         <object>objects\obj_player_block</object>
         <object>objects\obj_asteroid</object>
+        <object>objects\obj_asteroid_slow</object>
+        <object>objects\obj_asteroid_fast</object>
         <object>objects\obj_asteroid_large</object>
+        <object>objects\obj_asteroid_large_slow</object>
         <object>objects\obj_asteroid_block</object>
         <object>objects\obj_laser_mount_top</object>
         <object>objects\obj_laser_mount_spin</object>
@@ -720,6 +723,7 @@
     <rooms name="Beginner">
       <room>rooms\rm_Beginner1</room>
       <room>rooms\rm_Beginner2</room>
+      <room>rooms\rm_Beginner3</room>
     </rooms>
     <rooms name="Archive">
       <room>rooms\rm_menu</room>
