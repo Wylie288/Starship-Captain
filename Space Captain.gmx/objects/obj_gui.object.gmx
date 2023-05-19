@@ -555,6 +555,8 @@ draw_text(view_xview[0] + 16, view_yview[0] + 16, "FPS = " + string(dfps));
             <kind>1</kind>
             <string>///Objective Arrow
 if global.zone != 0
+    width = 60
+    scale = 0.9
     if global.targets_hit != global.target_count or global.balls_collected != global.ball_count or global.batteries_charged != global.battery_count
     {
         if global.target_count &gt; 0
@@ -572,9 +574,10 @@ if global.zone != 0
     else
     {
         with(obj_physics_sensor)
-        {
-            width = 16
-            
+        {   
+        width = other.width
+        scale = other.scale
+        
             if image_index = 0
             {
                 //Side of Screen
@@ -631,7 +634,7 @@ if global.zone != 0
                 
                 //Visible
                 if !((bbox_right &gt; view_xview[0]) &amp;&amp; (bbox_left &lt; view_xview[0] + view_wview[0]) &amp;&amp; (bbox_bottom &gt; view_yview[0]) &amp;&amp; (bbox_top &lt; view_yview[0] + view_hview[0]))
-                    draw_sprite_ext(spr_docking_arrow,0,view_xview[0] + dx, view_yview[0] + dy,1,1,angle,image_blend,image_alpha)
+                    draw_sprite_ext(spr_docking_arrow,0,view_xview[0] + dx, view_yview[0] + dy,scale,scale,angle,image_blend,image_alpha)
             }
         }
     }   
