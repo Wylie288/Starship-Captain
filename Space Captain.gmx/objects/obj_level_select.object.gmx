@@ -76,6 +76,15 @@ ini_open(global.normal_stars_file)
     if (ini_read_real(string(global.zone),string(num),0) &gt; 0 and global.game_mode = "Sandbox") or (ini_read_real(string(global.zone),string(num),0) = 3 and global.game_mode = "Time Trial")
         unlocked = 1
 ini_close()
+
+if global.zone = 1 and num &gt; 4
+    unlocked = 0
+    
+if global.zone = 2 and num &gt; 4
+    unlocked = 0
+    
+if global.zone = 3 and num &gt; 5
+    unlocked = 0
 </string>
           </argument>
         </arguments>

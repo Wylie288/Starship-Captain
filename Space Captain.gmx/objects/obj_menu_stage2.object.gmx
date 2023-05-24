@@ -28,7 +28,7 @@
             <string>instance_create(0,0,obj_main_menu_blur)
 instance_create(704,352,obj_beginner_zone)
 instance_create(1856,352,obj_intermediate_zone)
-instance_create(1280,960,obj_ironman_zone)
+instance_create(1280,960,obj_advanced_zone)
 instance_create(96,48,obj_stage2_back)
 </string>
           </argument>
@@ -58,7 +58,7 @@ with (obj_beginner_zone)
     instance_destroy()
 with (obj_intermediate_zone)
     instance_destroy()
-with (obj_ironman_zone)
+with (obj_advanced_zone)
     instance_destroy()
 with (obj_stage2_back)
     instance_destroy()

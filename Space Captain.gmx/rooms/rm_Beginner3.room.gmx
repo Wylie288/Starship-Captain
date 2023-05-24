@@ -452,6 +452,7 @@
     <tile bgName="station_back256" x="4864" y="4608" w="256" h="256" xo="0" yo="0" id="10009274" name="inst_8A43D0E6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="station_back256" x="4608" y="4608" w="256" h="256" xo="0" yo="0" id="10009275" name="inst_B21D1A20" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="station_back256" x="4864" y="4096" w="256" h="256" xo="0" yo="0" id="10009276" name="inst_A564E9E8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="station_back256" x="2176" y="4864" w="256" h="256" xo="0" yo="0" id="10009418" name="inst_66547112" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_SpaceFill" x="4544" y="3136" w="64" h="64" xo="0" yo="0" id="10009277" name="inst_3BB0BB49" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_SpaceFill" x="4480" y="3136" w="64" h="64" xo="0" yo="0" id="10009278" name="inst_3DBE8C84" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_SpaceFill" x="4416" y="3136" w="64" h="64" xo="0" yo="0" id="10009279" name="inst_E70C12AD" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

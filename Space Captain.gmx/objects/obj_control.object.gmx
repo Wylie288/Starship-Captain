@@ -29,7 +29,7 @@
 if room = rm_1_13
     random_set_seed(2);
 
-if room = rm_1_14
+if room = rm_1_18
     random_set_seed(1);
 
 if room = rm_1_15
@@ -38,13 +38,13 @@ if room = rm_1_15
 if room = rm_2_13t
     random_set_seed(1);
     
-if room = rm_100_2
+if room = rm_Advanced3
     random_set_seed(3);
     
 if room = rm_1_18
     random_set_seed(1);
     
-if room = rm_1_20
+if room = rm_Intermediate3
     random_set_seed(2);
 
 </string>

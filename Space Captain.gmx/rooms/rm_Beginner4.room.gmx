@@ -203,6 +203,7 @@
     <instance objName="obj_target2" x="3200" y="5120" name="inst_1B1E0872" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_target2" x="3200" y="6400" name="inst_ACCD284F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gun" x="3328" y="3776" name="inst_18B70191" locked="0" code="fixed = 0&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="4480" y="5504" name="inst_96FB7D3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="station_back256" x="3072" y="3584" w="256" h="256" xo="0" yo="0" id="10005947" name="inst_0A8A4BAA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

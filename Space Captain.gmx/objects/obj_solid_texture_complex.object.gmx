@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>texture = 0
+startSprite = sprite_index
 depth = -y + room_height
 </string>
           </argument>
@@ -74,20 +75,29 @@ sprite_delete(sprite_index);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if texture = 0
+            <string>if sprite_exists(sprite_index)
 {
-    if distance_to_object(obj_ship) &lt; 1400 or room = rm_start_windows or room = rm_level_editor
+    if texture = 0
     {
-        scr_clipping()
-         texture = 1
+        if distance_to_object(obj_ship) &lt; 1800 or room = rm_start_windows or room = rm_level_editor
+        {
+            scr_clipping()
+             texture = 1
+        }
+        //scr_clipping_side()
     }
-    //scr_clipping_side()
+    
+    //sprite_delete(sprite_index);
+    //draw_sprite(side,0,x,y+32)
+    
+        draw_self()
+    //event_inherited()
 }
-
-//sprite_delete(sprite_index);
-//draw_sprite(side,0,x,y+32)
-draw_self()
-//event_inherited()
+else
+{
+    sprite_index = startSprite
+    texture = 0
+}
 </string>
           </argument>
         </arguments>

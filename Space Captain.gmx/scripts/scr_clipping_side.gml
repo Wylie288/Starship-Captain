@@ -47,7 +47,7 @@ draw_clear_alpha(c_white,0)
     draw_set_blend_mode(bm_normal);
 //We no longer need to draw on the surface, therefor we reset the target.
 surface_reset_target(); 
-side = sprite_create_from_surface(surf_blend, 0, 0, sprite_width, sprite_height, false, false, 0, 0);
+/*side*/ sprite_index = sprite_create_from_surface(surf_blend, 0, 0, sprite_width, sprite_height, false, false, 0, 0);
 //draw_surface(surf1, 0, 0); //draw the surface on the screen.
 
 surface_free(surf_tile);

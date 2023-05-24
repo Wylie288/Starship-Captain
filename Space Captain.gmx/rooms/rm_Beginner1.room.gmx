@@ -647,6 +647,55 @@
     <instance objName="obj_wall512" x="5952" y="3712" name="inst_E06ADF74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall512" x="6656" y="3200" name="inst_253FC984" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall256" x="6720" y="4224" name="inst_BD666095" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="1280" y="4544" name="inst_953174D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="1344" y="4544" name="inst_A0CE8AA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="1408" y="4544" name="inst_1548445B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="1472" y="4544" name="inst_E2A954D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="1472" y="4608" name="inst_CA459100" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="1408" y="4608" name="inst_BB60FDEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="1344" y="4608" name="inst_1EB1E54F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="1280" y="4608" name="inst_15A4930E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="1920" y="4160" name="inst_FE99758E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="1984" y="4160" name="inst_C1134DAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="2048" y="4160" name="inst_2E16E9B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="2112" y="4160" name="inst_17FA8D8D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="2112" y="4096" name="inst_FE275ACE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="2048" y="4096" name="inst_122CD339" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="1984" y="4096" name="inst_BB16FFB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="1920" y="4096" name="inst_605C7567" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="5952" y="2944" name="inst_63306129" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="6016" y="2944" name="inst_D9DD8A16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="6080" y="2944" name="inst_3CB70BE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="6080" y="3008" name="inst_EDF4A360" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="6080" y="3072" name="inst_6CE4B398" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="6016" y="3072" name="inst_84CF2E49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="5952" y="3072" name="inst_EEF85CC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="5952" y="3008" name="inst_BDB926E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="6016" y="3008" name="inst_5420E3CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8384" y="1088" name="inst_53D746A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8384" y="1152" name="inst_BEBC3216" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8384" y="1216" name="inst_E85A9667" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8384" y="1280" name="inst_56D82629" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8448" y="1088" name="inst_574914B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8448" y="1152" name="inst_167D328C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8448" y="1216" name="inst_BF19295C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8512" y="1216" name="inst_F42F0B3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8512" y="1280" name="inst_A8BAB766" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8448" y="1280" name="inst_F26B1A6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8512" y="1088" name="inst_750EFD77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8512" y="1152" name="inst_62E94150" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8576" y="1088" name="inst_CAE1AEF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8576" y="1152" name="inst_B97F74B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8576" y="1216" name="inst_C8A2D7C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8640" y="1216" name="inst_5E500BC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8640" y="1280" name="inst_2086528E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8576" y="1280" name="inst_DE06C99F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8640" y="1088" name="inst_1E736552" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8640" y="1152" name="inst_57DA4B24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8704" y="1088" name="inst_325A0D21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8704" y="1152" name="inst_BF6E22EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8704" y="1216" name="inst_83B29B02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_electric" x="8704" y="1280" name="inst_8626FC8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="station_back256" x="4224" y="4096" w="256" h="256" xo="0" yo="0" id="10002955" name="inst_BEA9A5BB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

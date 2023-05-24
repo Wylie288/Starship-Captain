@@ -219,7 +219,6 @@
             <sprite>sprites\spr_level_preview_1</sprite>
             <sprite>sprites\spr_level_preview_2</sprite>
             <sprite>sprites\spr_level_preview_3</sprite>
-            <sprite>sprites\spr_level_preview_100</sprite>
           </sprites>
           <sprite>sprites\spr_level_select</sprite>
           <sprite>sprites\spr_gravity_back</sprite>
@@ -608,6 +607,7 @@
           <object>objects\obj_stage2_back</object>
           <object>objects\obj_beginner_zone</object>
           <object>objects\obj_intermediate_zone</object>
+          <object>objects\obj_advanced_zone</object>
           <object>objects\obj_ironman_zone</object>
           <object>objects\obj_zone_advanced</object>
           <object>objects\obj_zone_training</object>
@@ -724,6 +724,20 @@
       <room>rooms\rm_Beginner1</room>
       <room>rooms\rm_Beginner2</room>
       <room>rooms\rm_Beginner3</room>
+      <room>rooms\rm_Beginner4</room>
+    </rooms>
+    <rooms name="Intermediate">
+      <room>rooms\rm_Intermediate1</room>
+      <room>rooms\rm_Intermediate2</room>
+      <room>rooms\rm_Intermediate3</room>
+      <room>rooms\rm_Intermediate4</room>
+    </rooms>
+    <rooms name="Advanced">
+      <room>rooms\rm_Advanced1</room>
+      <room>rooms\rm_Advanced2</room>
+      <room>rooms\rm_Advanced3</room>
+      <room>rooms\rm_Advanced4</room>
+      <room>rooms\rm_Advanced5</room>
     </rooms>
     <rooms name="Archive">
       <room>rooms\rm_menu</room>
@@ -736,7 +750,6 @@
         <room>rooms\rm_1_2</room>
         <room>rooms\rm_1_3</room>
         <room>rooms\rm_1_5</room>
-        <room>rooms\rm_1_6</room>
         <room>rooms\rm_1_7</room>
         <room>rooms\rm_1_8</room>
         <room>rooms\rm_1_9</room>
@@ -744,7 +757,6 @@
         <room>rooms\rm_1_11</room>
         <room>rooms\rm_1_12</room>
         <room>rooms\rm_1_13</room>
-        <room>rooms\rm_1_14</room>
         <room>rooms\rm_1_15t</room>
         <room>rooms\rm_1_15</room>
         <room>rooms\rm_1_12tt</room>
@@ -753,8 +765,6 @@
         <room>rooms\rm_1_16</room>
         <room>rooms\rm_1_17</room>
         <room>rooms\rm_1_18</room>
-        <room>rooms\rm_1_19</room>
-        <room>rooms\rm_1_20</room>
         <room>rooms\rm_1_5t</room>
         <room>rooms\rm_1_9t</room>
         <room>rooms\rm_1_9old</room>
@@ -769,7 +779,6 @@
         <room>rooms\rm_2_5</room>
         <room>rooms\rm_2_6</room>
         <room>rooms\rm_2_7</room>
-        <room>rooms\rm_2_3t</room>
         <room>rooms\rm_2_4t</room>
         <room>rooms\rm_2_5t</room>
         <room>rooms\rm_2_6t</room>
@@ -779,13 +788,8 @@
         <room>rooms\rm_2_11t</room>
         <room>rooms\rm_2_13t</room>
         <room>rooms\rm_100_1</room>
-        <room>rooms\rm_100_2</room>
         <room>rooms\rm_100_3</room>
-        <room>rooms\rm_3_1</room>
-        <room>rooms\rm_3_2</room>
-        <room>rooms\rm_3_3</room>
         <room>rooms\rm_3_4</room>
-        <room>rooms\rm_3_5</room>
         <room>rooms\rm_t1</room>
         <room>rooms\rm_t2</room>
         <room>rooms\rm_t4</room>

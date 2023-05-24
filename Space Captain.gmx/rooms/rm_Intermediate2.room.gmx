@@ -238,6 +238,8 @@
     <instance objName="obj_battery" x="2592" y="3840" name="inst_2C8E89C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_energizer" x="3584" y="3200" name="inst_EFEC806F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall256" x="3072" y="4608" name="inst_18C8FE1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="1408" y="4032" name="inst_FDBE42F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="3584" y="4992" name="inst_C5B4C8BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_girder" x="4352" y="3904" w="128" h="129" xo="0" yo="0" id="10004884" name="inst_25BE0ED0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

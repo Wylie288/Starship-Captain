@@ -402,6 +402,10 @@
     <instance objName="obj_battery" x="5504" y="4256" name="inst_271E68D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_battery" x="3712" y="4960" name="inst_AA4C5BEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_energizer" x="5504" y="4992" name="inst_422712B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="2688" y="3712" name="inst_A41702A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="5504" y="4416" name="inst_6A5B0CE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="3712" y="5184" name="inst_42673C85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="4992" y="3232" name="inst_6C244A92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="station_back256" x="4864" y="3072" w="256" h="256" xo="0" yo="0" id="10000871" name="inst_82B70E70" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

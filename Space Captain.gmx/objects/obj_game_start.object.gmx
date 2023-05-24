@@ -109,9 +109,9 @@ global.zone = 1
 global.ship = 1
 global.game_mode = "Normal"
 global.levelcount[0] = 4
-global.levelcount[1] = 15
-global.levelcount[2] = 3
-global.levelcount[3] = 10
+global.levelcount[1] = 4
+global.levelcount[2] = 4
+global.levelcount[3] = 5
 global.levelcount[4] = 3
 global.levelcount[100] = 15
 global.scroll = 0
@@ -231,7 +231,7 @@ global.board = ds_grid_create(0,0)
 
 if os_is_network_connected()
 {   
-    alarm[0] = 240
+    alarm[0] = 60
     type = network_socket_tcp
 
     size = 1024

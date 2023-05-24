@@ -3,7 +3,7 @@
   <caption></caption>
   <width>7680</width>
   <height>7680</height>
-  <vsnap>64</vsnap>
+  <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
@@ -166,6 +166,7 @@
     <instance objName="obj_target" x="4800" y="3072" name="inst_4C41A01A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_target" x="3392" y="3072" name="inst_DCB11587" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_target" x="3648" y="4608" name="inst_1183DCEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="4352" y="4064" name="inst_52008FB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="station_back256" x="3328" y="2304" w="256" h="256" xo="0" yo="0" id="10002744" name="inst_E432F9AB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
