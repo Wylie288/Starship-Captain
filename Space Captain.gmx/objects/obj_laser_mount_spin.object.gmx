@@ -61,6 +61,7 @@ if view = 1
     
     if delay = 0
     {
+        /*
         ninterupt1 = 0
         dx = lengthdir_x(draw_dist-5,angle)
         dy = lengthdir_y(draw_dist-5,angle)
@@ -78,8 +79,13 @@ if view = 1
         dy = lengthdir_y(draw_dist+5,angle)
         if (collision_point(x+ox+dx,y+oy+dy,obj_solid,true,true)= noone)
             ninterupt3 = 1
-    
-        if ninterupt1 or ninterupt2 != ointerupt2 or ninterupt3
+            */
+        dx = lengthdir_x(draw_dist,angle)
+        dy = lengthdir_y(draw_dist,angle)
+        cpoint = collision_point(x+ox+dx+1,y+oy+dy+1,obj_solid,true,true)
+        
+        cstate = collision_line(x+ox,y+oy,x+ox+dx,y+oy+dy,obj_solid,true,true)
+        if cstate != ostate//ninterupt1 or ninterupt2 != ointerupt2 or ninterupt3
         {
             col_ship = 0
             draw_dist = 0
@@ -90,7 +96,8 @@ if view = 1
             dy = y + oy + sy
             if (collision_line(x+ox,y+oy,dx,dy,obj_solid,1,1) &lt; 0) 
             {
-                distance = -1;
+                //distance = -1
+                draw_dist = max_dist
             }
             else
             {
@@ -109,14 +116,16 @@ if view = 1
                         dy -= sy;
                     }
                 }
+                
                 draw_dist = point_distance(x+ox,y+ox,dx,dy);
-                col_dist = draw_dist + 5
+                col_dist = draw_dist //+ 5
             }
         }
         
-        ointerupt1 = ninterupt1
+        ostate = cstate
+        /*ointerupt1 = ninterupt1
         ointerupt2 = ninterupt2
-        ointerupt3 = ninterupt3
+        ointerupt3 = ninterupt3*/
         
         delay = 3
     }

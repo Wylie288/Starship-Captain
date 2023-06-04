@@ -318,7 +318,7 @@
     <instance objName="obj_30_7" x="7680" y="1344" name="inst_749BDC4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_30_7" x="6912" y="1728" name="inst_7DCA8629" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_laser_mount_top" x="2880" y="3778" name="inst_8A823A73" locked="0" code="count_on = 60&#xA;count_off = 90&#xA;fire = 1&#xA;angle = 270" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_laser_mount_top" x="3648" y="2816" name="inst_01F45E16" locked="0" code="count_on = 60&#xA;count_off = 90&#xA;fire = 0&#xA;angle = 90&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_laser_mount_top" x="3648" y="2816" name="inst_01F45E16" locked="0" code="count_on = 60&#xA;count_off = 90&#xA;fire = 0&#xA;angle = 90" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_laser_mount_top" x="3136" y="2176" name="inst_475C1E6F" locked="0" code="count_on = 60&#xA;count_off = 90&#xA;fire = 1&#xA;angle = 180&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_laser_mount_top" x="5568" y="2880" name="inst_0C365089" locked="0" code="count_on = 60&#xA;count_off = 90&#xA;fire = 1&#xA;angle = 225&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_laser_mount_top" x="5728" y="2720" name="inst_6B97A672" locked="0" code="count_on = 60&#xA;count_off = 110&#xA;fire = 0&#xA;angle = 45&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

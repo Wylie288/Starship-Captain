@@ -46,6 +46,8 @@ if room = rm_1_18
     
 if room = rm_Intermediate3
     random_set_seed(2);
+    
+instance_create(0, 0, obj_laser_control)
 
 </string>
           </argument>

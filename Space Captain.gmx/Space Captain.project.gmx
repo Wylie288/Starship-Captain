@@ -310,6 +310,7 @@
       <script>scripts\line_energizer_random.gml</script>
       <script>scripts\battery_direction.gml</script>
       <script>scripts\draw_board.gml</script>
+      <script>scripts\findCollisionPoint.gml</script>
     </scripts>
     <scripts name="Config">
       <script>scripts\setLevelData.gml</script>
@@ -362,6 +363,7 @@
         <script>scripts\LoadLevel.gml</script>
       </scripts>
     </scripts>
+    <script>scripts\script47.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\sha_blur.shader</shader>
@@ -697,6 +699,7 @@
       <object>objects\obj_editor_object</object>
     </objects>
     <object>objects\obj_gravityField</object>
+    <object>objects\obj_laser_control</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game_start</room>

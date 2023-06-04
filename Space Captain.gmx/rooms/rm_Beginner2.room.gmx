@@ -409,7 +409,7 @@
     <instance objName="obj_wall128" x="4672" y="1344" name="inst_AEBB3DAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall128" x="4672" y="1472" name="inst_C48BC152" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_small_hor" x="2304" y="2560" name="inst_274181CB" locked="0" code="phy_speed_x = 3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block_small_hor" x="2240" y="2176" name="inst_DA1EB128" locked="0" code="phy_speed_x = 4.5&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block_small_hor" x="2240" y="2176" name="inst_DA1EB128" locked="0" code="phy_speed_x = 4.5" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_small_hor" x="4544" y="2304" name="inst_EAC003E6" locked="0" code="phy_speed_x = 3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_small_hor" x="4480" y="1920" name="inst_7D0BFC33" locked="0" code="phy_speed_x = 4.5&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_small" x="2624" y="1856" name="inst_FB8C4E54" locked="0" code="phy_speed_y = 3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

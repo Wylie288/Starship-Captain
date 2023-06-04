@@ -3,11 +3,46 @@
   <spriteName>spr_laser_mount</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>1</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>obj_solid</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>event_inherited()
+
+laserControl = obj_laser_control
+channel = laserControl.channel
+
+switch (laserControl.channel)
+{
+    case 0: laserControl.channel = 1; break;
+    case 1: laserControl.channel = 2; break;
+    case 2: laserControl.channel = 0; break;
+}
+
+endPointOld = 0
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -34,6 +69,10 @@ dx = lengthdir_x(max_dist,angle)
 dy = lengthdir_y(max_dist,angle)
 if (point_in_rectangle(x+ox+dx, y+oy+dy, view_xview[0], view_yview[0], view_xview[0] + view_wview[0], view_yview[0] + view_hview[0]))
    view = 1
+   
+inView = view
+length = draw_dist
+maxLength = max_dist
 </string>
           </argument>
         </arguments>
@@ -55,71 +94,20 @@ if (point_in_rectangle(x+ox+dx, y+oy+dy, view_xview[0], view_yview[0], view_xvie
           <argument>
             <kind>1</kind>
             <string>///Check for interupt
-if view = 1
-{
-    delay -= 1
+//Lasers collision alternate checks every 3rd tick. Collision checking a larger area is faster than running every laser each tick. Accuracy loss is negligable.
+if ((inView = 1) and (laserControl.channel = channel)){ 
+    endPointCurrent = checkEndPoint(sourceX, sourceY, angle, length + 1) //Return object ID at end point or 0 if none. +1 to account for rounding/floating point errors
+    endPointDifference = endPointOld - endPointCurrent 
     
-    if delay = 0
-    {
-        ninterupt1 = 0
-        dx = lengthdir_x(draw_dist-5,angle)
-        dy = lengthdir_y(draw_dist-5,angle)
-        if (collision_line(x+ox,y+oy,x+ox+dx,y+oy+dy,obj_solid,true,true)!= noone)
-            ninterupt1 = 1
-        
-        ninterupt2 = 0
-        dx = lengthdir_x(draw_dist,angle)
-        dy = lengthdir_y(draw_dist,angle)
-        if (collision_point(x+ox+dx,y+oy+dy,obj_solid,true,true)!= noone)
-            ninterupt2 = 1
-            
-        ninterupt3 = 0
-        dx = lengthdir_x(draw_dist+5,angle)
-        dy = lengthdir_y(draw_dist+5,angle)
-        if (collision_point(x+ox+dx,y+oy+dy,obj_solid,true,true)= noone)
-            ninterupt3 = 1
+    if endPointCurrent = 0 //Prevents a scenario where it might take 6 ticks to detect a collision, as hit boxes are only scaled by 3.
+        length = maxLength
+    betweenPoint = checkLine(sourceX, sourceY, angle, length - 1) // -1 to exclude current collision
     
-        if ninterupt1 or ninterupt2 != ointerupt2 or ninterupt3
-        {
-            col_ship = 0
-            draw_dist = 0
-            col_dist = 0
-            sx = lengthdir_x(max_dist,angle)
-            sy = lengthdir_y(max_dist,angle)
-            dx = x + ox + sx
-            dy = y + oy + sy
-            if (collision_line(x+ox,y+oy,dx,dy,obj_solid,1,1) &lt; 0) 
-            {
-                distance = -1;
-            }
-            else
-            {
-                while ((abs(sx) &gt;= 1) || (abs(sy) &gt;= 1)) 
-                {
-                    sx /= 2;
-                    sy /= 2;
-                    if (collision_line(x+ox,y+oy,dx,dy,obj_solid,1,1) &lt; 0) 
-                    {
-                        dx += sx;
-                        dy += sy;
-                    }
-                    else
-                    {
-                        dx -= sx;
-                        dy -= sy;
-                    }
-                }
-                draw_dist = point_distance(x+ox,y+ox,dx,dy);
-                col_dist = draw_dist + 5
-            }
-        }
+    if ((endPointCurrent != 0) or (betweenPoint != 0))
+        length = findCollisionPoint(sourceX, sourceY, angle, length)
         
-        ointerupt1 = ninterupt1
-        ointerupt2 = ninterupt2
-        ointerupt3 = ninterupt3
-        
-        delay = 3
-    }
+    endPointOld = endPointCurrent
+    colWait = 1
 }
 </string>
           </argument>
@@ -142,12 +130,14 @@ if view = 1
           <argument>
             <kind>1</kind>
             <string>///Check for ship
+draw_dist = length
+maxLength = max_dist
 if view = 1
 {
     if ship = 1 or fire = 1
     {
-        dx = lengthdir_x(col_dist,angle)
-        dy = lengthdir_y(col_dist,angle)
+        dx = lengthdir_x(draw_dist + 5,angle)
+        dy = lengthdir_y(draw_dist + 5,angle)
         if collision_line(x+ox,y+oy,x+ox+dx,y+oy+dy,obj_ship,true,true) = noone
         {
             if ship = 1
@@ -258,8 +248,8 @@ alarm[0] = 1
             <string>///Particles
 if (view = 1 and fire = 1) or display &gt; 0
 {
-    dx = lengthdir_x(draw_dist,angle)
-    dy = lengthdir_y(draw_dist,angle)
+    dx = ox + lengthdir_x(draw_dist - 2,angle)
+    dy = oy + lengthdir_y(draw_dist - 2,angle)
     part_type_color1(Particle,c_red);
     part_emitter_region(PartSystem,PartEmitter,x+dx,x+dx,y+dy,y+dy,0,0);
     part_emitter_burst(PartSystem,PartEmitter,Particle,1);
@@ -287,8 +277,12 @@ if (view = 1 and fire = 1) or display &gt; 0
           <argument>
             <kind>1</kind>
             <string>///Intialization
-ox = lengthdir_x(14,angle)
-oy = lengthdir_y(14,angle)
+//offset = 16
+ox = lengthdir_x(8,angle)
+oy = lengthdir_y(8,angle)
+
+sourceX = x + ox
+sourceY = y + oy
 draw_dist = 0
 col_dist = 0
 max_dist = 0
@@ -299,6 +293,7 @@ fire_count = 0
 ointerupt1 = 0
 ointerupt2 = 0
 ointerupt3 = 0
+ostate = 0
 </string>
           </argument>
         </arguments>
@@ -340,7 +335,7 @@ while(collision_point(x+ox+dx,y+oy+dy,obj_wall,true,true) = noone)
     dx = lengthdir_x(max_dist,angle)
     dy = lengthdir_y(max_dist,angle)
 }
-draw_dist -= 1
+//draw_dist -= 1
 alarm[0] = 1
 </string>
           </argument>
@@ -411,28 +406,28 @@ PartEmitter = part_emitter_create(PartSystem);
 if (fire = 1 and ship = 0 and view = 1) or display &gt; 0
 {
     ww = 2
-    x1 = x + ox
-    x2 = y + oy
-    y1 = x + ox + lengthdir_x(draw_dist,angle)
-    y2 = y + oy + lengthdir_y(draw_dist,angle)
+    x1 = sourceX
+    y1 = sourceY
+    x2 = sourceX + lengthdir_x(draw_dist,angle)
+    y2 = sourceY + lengthdir_y(draw_dist,angle)
     draw_set_color(c_red)
     draw_set_alpha(0.05)
-    draw_line_width(x1,x2,y1,y2,ww*8)
-    draw_line_width(x1,x2,y1,y2,ww*7)
-    draw_line_width(x1,x2,y1,y2,ww*6)
+    draw_line_width(x1,y1,x2,y2,ww*8)
+    draw_line_width(x1,y1,x2,y2,ww*7)
+    draw_line_width(x1,y1,x2,y2,ww*6)
     draw_set_alpha(0.1)
-    draw_line_width(x1,x2,y1,y2,ww*4)
-    draw_line_width(x1,x2,y1,y2,ww*3)
+    draw_line_width(x1,y1,x2,y2,ww*4)
+    draw_line_width(x1,y1,x2,y2,ww*3)
     draw_set_alpha(0.2)
-    draw_line_width(x1,x2,y1,y2,ww*2)
+    draw_line_width(x1,y1,x2,y2,ww*2)
     draw_set_alpha(0.3)
-    draw_line_width(x1,x2,y1,y2,ww*1.5)
+    draw_line_width(x1,y1,x2,y2,ww*1.5)
     draw_set_blend_mode(bm_add)
     draw_set_alpha(0.6)
-    draw_line_width(x1,x2,y1,y2,ww)
+    draw_line_width(x1,y1,x2,y2,ww)
     draw_set_color(c_white)
     draw_set_alpha(0.2)
-    draw_line_width(x1,x2,y1,y2,ww/2)
+    draw_line_width(x1,y1,x2,y2,ww/2)
     draw_set_alpha(1)
     draw_set_blend_mode(0)
     
