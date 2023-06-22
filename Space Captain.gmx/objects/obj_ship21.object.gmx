@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Inherit
+fixed_rot = 0
 global.temp = 0
 event_inherited()
 
@@ -52,7 +53,7 @@ if global.grav &gt; 0
           <argument>
             <kind>1</kind>
             <string>///Initialize
-force = 3000
+force = 2000
 thrusters_sprite = spr_ship21
 </string>
           </argument>

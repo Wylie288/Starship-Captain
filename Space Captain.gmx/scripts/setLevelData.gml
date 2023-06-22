@@ -27,7 +27,7 @@ if global.zone = 100
 #define levelData1
 global.levelData[1,ldROOM] = rm_Beginner1
 global.levelData[1,ldSHIP] = "3"
-global.levelData[1,ldLTIME] = 5.509
+global.levelData[1,ldLTIME] = 75
 global.levelData[1,ldGRAV] = 0
 global.levelData[1,ldDIR] = -1
 global.levelData[1,ldPRES] = 0
@@ -37,7 +37,7 @@ global.levelData[1,ldTAR] = 0
 
 global.levelData[2,ldROOM] = rm_Beginner2
 global.levelData[2,ldSHIP] = "5"
-global.levelData[2,ldLTIME] = 15.799
+global.levelData[2,ldLTIME] = 85
 global.levelData[2,ldGRAV] = 0
 global.levelData[2,ldDIR] = -1
 global.levelData[2,ldPRES] = 0
@@ -47,7 +47,7 @@ global.levelData[2,ldTAR] = 4
 
 global.levelData[3,ldROOM] = rm_Beginner3
 global.levelData[3,ldSHIP] = "7"
-global.levelData[3,ldLTIME] = 10.619
+global.levelData[3,ldLTIME] = 200
 global.levelData[3,ldGRAV] = 0
 global.levelData[3,ldDIR] = 0
 global.levelData[3,ldPRES] = 0
@@ -57,7 +57,7 @@ global.levelData[3,ldTAR] = 7
 
 global.levelData[4,ldROOM] = rm_Beginner4
 global.levelData[4,ldSHIP] = "5"
-global.levelData[4,ldLTIME] = 9.779
+global.levelData[4,ldLTIME] = 40
 global.levelData[4,ldGRAV] = 0
 global.levelData[4,ldDIR] = -1
 global.levelData[4,ldPRES] = 0
@@ -209,7 +209,7 @@ global.levelData[20,ldDIR] = -1
 #define levelData2
 global.levelData[1,ldROOM] = rm_Intermediate1
 global.levelData[1,ldSHIP] = "3"
-global.levelData[1,ldLTIME] = 15.43
+global.levelData[1,ldLTIME] = 50
 global.levelData[1,ldGRAV] = 0
 global.levelData[1,ldDIR] = 0
 global.levelData[1,ldHP] = 3 
@@ -217,7 +217,7 @@ global.levelData[1,ldTAR] = 4
 
 global.levelData[2,ldROOM] = rm_Intermediate2
 global.levelData[2,ldSHIP] = "5"
-global.levelData[2,ldLTIME] = 15.43//15.43
+global.levelData[2,ldLTIME] = 70
 global.levelData[2,ldGRAV] = 0
 global.levelData[2,ldDIR] = -1
 global.levelData[2,ldHP] = 3
@@ -225,7 +225,7 @@ global.levelData[2,ldTAR] = 7
 
 global.levelData[3,ldROOM] = rm_Intermediate3
 global.levelData[3,ldSHIP] = "7"
-global.levelData[3,ldLTIME] = 44.64//44.64
+global.levelData[3,ldLTIME] = 50
 global.levelData[3,ldGRAV] = 0
 global.levelData[3,ldDIR] = -1
 global.levelData[3,ldHP] = 1
@@ -233,7 +233,7 @@ global.levelData[3,ldTAR] = 7
 
 global.levelData[4,ldROOM] = rm_Intermediate4
 global.levelData[4,ldSHIP] = "6"
-global.levelData[4,ldLTIME] = 15.88
+global.levelData[4,ldLTIME] = 95
 global.levelData[4,ldGRAV] = 0
 global.levelData[4,ldDIR] = -1
 global.levelData[4,ldHP] = 3 
@@ -296,7 +296,7 @@ global.levelData[13,ldDIR] = -1
 #define levelData3
 global.levelData[1,ldROOM] = rm_Advanced1
 global.levelData[1,ldSHIP] = "15"
-global.levelData[1,ldLTIME] = 34.049
+global.levelData[1,ldLTIME] = 14
 global.levelData[1,ldGRAV] = 0
 global.levelData[1,ldDIR] = -1
 global.levelData[1,ldPRES] = 0
@@ -306,7 +306,7 @@ global.levelData[1,ldTAR] = 0
 
 global.levelData[2,ldROOM] = rm_Advanced2
 global.levelData[2,ldSHIP] = "16"
-global.levelData[2,ldLTIME] = 16.579
+global.levelData[2,ldLTIME] = 18
 global.levelData[2,ldGRAV] = 0
 global.levelData[2,ldDIR] = -1
 global.levelData[2,ldPRES] = 0
@@ -316,7 +316,7 @@ global.levelData[2,ldTAR] = 0
 
 global.levelData[3,ldROOM] = rm_Advanced3
 global.levelData[3,ldSHIP] = "15"
-global.levelData[3,ldLTIME] = 48.069
+global.levelData[3,ldLTIME] = 55
 global.levelData[3,ldGRAV] = 0
 global.levelData[3,ldDIR] = -1
 global.levelData[3,ldPRES] = 0
@@ -326,7 +326,7 @@ global.levelData[3,ldTAR] = 4
 
 global.levelData[4,ldROOM] = rm_Advanced4
 global.levelData[4,ldSHIP] = "16"
-global.levelData[4,ldLTIME] = 31.979
+global.levelData[4,ldLTIME] = 45
 global.levelData[4,ldGRAV] = 0
 global.levelData[4,ldDIR] = -1
 global.levelData[4,ldPRES] = 0
@@ -336,7 +336,7 @@ global.levelData[4,ldTAR] = 4
 
 global.levelData[5,ldROOM] = rm_Advanced5
 global.levelData[5,ldSHIP] = "21"
-global.levelData[5,ldLTIME] = 19.209
+global.levelData[5,ldLTIME] = 18
 global.levelData[5,ldGRAV] = 0
 global.levelData[5,ldDIR] = -1
 global.levelData[5,ldPRES] = 0

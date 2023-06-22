@@ -109,10 +109,13 @@ y = view_yview[0] + round(view_hview[0] - (drawy * global.zoom))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self()
-font_set(font54,fa_center,fa_middle,c_white)
-if letters = 1
-draw_text_transformed(x,y,letter,global.zoom,global.zoom,0)
+            <string>if !instance_exists(obj_ship_crashed) and global.UIToggle = 1
+{
+    draw_self()
+    font_set(font54,fa_center,fa_middle,c_white)
+    if letters = 1
+    draw_text_transformed(x,y,letter,global.zoom,global.zoom,0)
+}
 </string>
           </argument>
         </arguments>

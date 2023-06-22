@@ -136,16 +136,19 @@ y = view_yview[0] + 1440 - (drawy * global.zoom)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if rot = 0
-    draw_sprite_ext(spr_vector_indicator,0,x,y,1,1,image_angle + global.controls_vector,image_blend,image_alpha)
-
-if rot != 0 and angle = -1
-    draw_sprite_ext(spr_vector_indicator,1,x,y,rot,1,0,image_blend,image_alpha)
-    
-if rot != 0 and angle &gt; 1
+            <string>if !instance_exists(obj_ship_crashed) and global.UIToggle = 1
 {
-    draw_sprite_ext(spr_vector_indicator,1,x,y,rot,1,0,image_blend,image_alpha)
-    draw_sprite_ext(spr_vector_indicator,2,x,y,1,1,image_angle,image_blend,image_alpha)
+    if rot = 0
+        draw_sprite_ext(spr_vector_indicator,0,x,y,1,1,image_angle + global.controls_vector,image_blend,image_alpha)
+    
+    if rot != 0 and angle = -1
+        draw_sprite_ext(spr_vector_indicator,1,x,y,rot,1,0,image_blend,image_alpha)
+        
+    if rot != 0 and angle &gt; 1
+    {
+        draw_sprite_ext(spr_vector_indicator,1,x,y,rot,1,0,image_blend,image_alpha)
+        draw_sprite_ext(spr_vector_indicator,2,x,y,1,1,image_angle,image_blend,image_alpha)
+    }
 }
 </string>
           </argument>

@@ -51,7 +51,8 @@ depth = -y + room_height
           <argument>
             <kind>1</kind>
             <string>surface_reset_target();
-sprite_delete(sprite_index);
+if sprite_index != startSprite
+    sprite_delete(sprite_index);
 //sprite_delete(side);
 </string>
           </argument>
@@ -75,11 +76,11 @@ sprite_delete(sprite_index);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if sprite_exists(sprite_index)
+            <string>if true//sprite_exists(sprite_index)
 {
     if texture = 0
     {
-        if distance_to_object(obj_ship) &lt; 1800 or room = rm_start_windows or room = rm_level_editor
+        if distance_to_object(obj_ship) &lt; 1600 or room = rm_start_windows or room = rm_level_editor
         {
             scr_clipping()
              texture = 1
@@ -90,13 +91,14 @@ sprite_delete(sprite_index);
     //sprite_delete(sprite_index);
     //draw_sprite(side,0,x,y+32)
     
-        draw_self()
+    draw_self()
     //event_inherited()
 }
 else
 {
-    sprite_index = startSprite
-    texture = 0
+    test = 0
+    //sprite_index = startSprite
+    //texture = 0
 }
 </string>
           </argument>

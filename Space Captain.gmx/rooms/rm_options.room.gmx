@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_game_start" x="0" y="0" name="inst_FA89DE88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_music_play" x="1792" y="512" name="inst_980B80F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_music_play" x="1792" y="496" name="inst_980B80F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_zoom" x="768" y="1024" name="inst_AE2F2076" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pan" x="1792" y="1024" name="inst_69A0E160" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_controls_vibration" x="768" y="496" name="inst_D357B385" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

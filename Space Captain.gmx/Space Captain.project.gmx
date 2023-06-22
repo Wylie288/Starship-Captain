@@ -62,6 +62,7 @@
     <sprites name="Tutorial">
       <sprite>sprites\spr_tut_controls</sprite>
       <sprite>sprites\spr_tut_docking</sprite>
+      <sprite>sprites\spr_tut_checkpoint</sprite>
       <sprite>sprites\spr_tutorial_losing_stars</sprite>
       <sprite>sprites\spr_tutorial_loss_state</sprite>
       <sprite>sprites\spr_tut_targets</sprite>
@@ -70,6 +71,7 @@
       <sprite>sprites\spr_tut_angled_gravity</sprite>
       <sprite>sprites\spr_tut_damage</sprite>
       <sprite>sprites\spr_magnetic_field</sprite>
+      <sprite>sprites\spr_gravity_warning</sprite>
     </sprites>
     <sprites name="Ships">
       <sprites name="Ships">
@@ -279,6 +281,8 @@
     <sprite>sprites\spr_preview</sprite>
     <sprite>sprites\spr_gravityField</sprite>
     <sprite>sprites\sprite158</sprite>
+    <sprite>sprites\spr_death_fade</sprite>
+    <sprite>sprites\sprite161</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_space</background>
@@ -364,6 +368,7 @@
       </scripts>
     </scripts>
     <script>scripts\script47.gml</script>
+    <script>scripts\checkPointRestore.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\sha_blur.shader</shader>
@@ -387,6 +392,7 @@
   <objects name="objects">
     <objects name="Ships">
       <object>objects\obj_create_ship</object>
+      <object>objects\obj_ship_crashed</object>
       <objects name="Ships">
         <object>objects\obj_ship</object>
         <object>objects\obj_ship_empty</object>
@@ -640,7 +646,11 @@
           <object>objects\obj_leaderboard</object>
           <object>objects\obj_time_trial_times</object>
         </objects>
-        <object>objects\obj_button_parent</object>
+        <objects name="Options">
+          <object>objects\obj_button_parent</object>
+          <object>objects\obj_menu_options</object>
+        </objects>
+        <object>objects\obj_options_back</object>
       </objects>
     </objects>
     <objects name="Sliders">
@@ -680,6 +690,7 @@
     <objects name="Tutorial">
       <object>objects\obj_tutorial</object>
       <object>objects\obj_tut_controls</object>
+      <object>objects\obj_tut_checkpoint</object>
       <object>objects\obj_tut_docking</object>
       <object>objects\obj_tut_losing_stars</object>
       <object>objects\obj_tut_loss_state</object>
@@ -689,6 +700,7 @@
       <object>objects\obj_angled_gravity</object>
       <object>objects\obj_tut_damaged_ship</object>
       <object>objects\obj_magnetic_field</object>
+      <object>objects\obj_gravity_warning</object>
     </objects>
     <object>objects\obj_menu_laser_block</object>
     <objects name="Editor">
@@ -812,9 +824,9 @@
     <constant name="RUBY">1.04</constant>
     <constant name="SAPPHIRE">1.08</constant>
     <constant name="EMERALD">1.12</constant>
-    <constant name="GOLD">1.25</constant>
-    <constant name="SILVER">1.5</constant>
-    <constant name="BRONZE">2</constant>
+    <constant name="GOLD">1.05</constant>
+    <constant name="SILVER">1.25</constant>
+    <constant name="BRONZE">1.5</constant>
     <constant name="CONNECTED">100</constant>
     <constant name="NAME">101</constant>
     <constant name="NAMETAKEN">102</constant>

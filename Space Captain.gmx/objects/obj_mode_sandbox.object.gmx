@@ -58,11 +58,11 @@ if os_type = os_android
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ini_open(global.sandbox_ship_file)
+            <string>//ini_open(global.sandbox_ship_file)
 unlocked = 0
-if ini_read_real("4","4",0) = 1
+if true//ini_read_real("4","4",0) = 1
 {
-    ini_close()
+    //ini_close()
     ini_open(global.normal_stars_file)
         if ini_read_real(string(global.zone),string(global.level),0) &gt; 0
             unlocked = 1

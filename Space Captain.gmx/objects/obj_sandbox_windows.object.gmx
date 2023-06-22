@@ -27,7 +27,11 @@
             <kind>1</kind>
             <string>if clicked = 1
 {
-    room_goto(rm_testing_select)
+    global.ship = "3"
+    global.grav = 0
+    global.grav_dir = 0
+    global.menu = rm_start_windows
+    room_goto(rm_testing)
     global.zone = 0
 }
 </string>

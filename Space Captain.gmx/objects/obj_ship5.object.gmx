@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Inherit
+fixed_rot = 1
 phy_fixed_rotation = 1
 event_inherited()
 </string>
@@ -88,7 +89,7 @@ physics_fixture_bind(ship,self)
           <argument>
             <kind>1</kind>
             <string>///Initialization
-force = 3000
+force = 2000
 thrusters_sprite = spr_ship5
 
 

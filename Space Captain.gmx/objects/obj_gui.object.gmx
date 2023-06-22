@@ -89,7 +89,7 @@ y = obj_ship.phy_position_y
           <argument>
             <kind>1</kind>
             <string>///Zoom
-if 0//global.zoom_toggle and instance_exists(obj_ship)
+if global.zoom_toggle and instance_exists(obj_ship)
 {
     global.zoom_max = 1.35
     zc = .005
@@ -283,7 +283,7 @@ if time_start = 0
 
 if time_start = 1
 {
-    global.delta = delta_time / 1000000//60/1000000*delta_time
+    global.delta = 60/1000000*delta_time //delta_time / 1000000
     
     if !instance_exists(obj_win) and !instance_exists(obj_game_over)
     global.timer += 1/60 * global.delta
@@ -366,8 +366,36 @@ shipy = obj_ship.phy_position_y
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>if instance_exists(obj_ship_crashed)
+{
+    var _dx = view_xview[0]
+    var _dy = view_yview[0]
+    var _dw = view_wview[0]
+    var _dh = view_hview[0]
+    draw_sprite_ext(spr_death_fade, 0, _dx, _dy, _dw, _dh, 0, c_white, 1)
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Stars
-if global.zone != 0
+if global.zone != 0 and !instance_exists(obj_ship_crashed) and global.UIToggle = 1
 {
     if global.game_mode = "Normal" or global.game_mode = "Sandbox"
     {
@@ -419,7 +447,7 @@ if global.zone = 0
           <argument>
             <kind>1</kind>
             <string>///Time
-if global.zone != 0
+if global.zone != 0 and !instance_exists(obj_ship_crashed) and global.UIToggle = 1
 {
     if global.game_mode = "Time Trial"
     {
@@ -473,43 +501,49 @@ if global.zone != 0
           <argument>
             <kind>1</kind>
             <string>///Objective
-if global.zone != 0
+if global.UIToggle = 1
 {
-    if global.targets_hit = global.target_count and global.balls_collected = global.ball_count and global.batteries_charged = global.battery_count
+    if global.zone != 0
     {
-        if distance_to_object(obj_physics_sensor) &gt; 120
-            objective = "Navigate to Docking Zone"
+        if global.targets_hit = global.target_count and global.balls_collected = global.ball_count and global.batteries_charged = global.battery_count
+        {
+            if distance_to_object(obj_physics_sensor) &gt; 120
+                objective = "Navigate to Docking Zone"
+            else
+            {
+                rpercent = floor(obj_physics_sensor.scale * 100)
+                if rpercent = 0
+                    percent = "00"
+                else if rpercent &lt; 10
+                    percent = "0" + string(rpercent)
+                else
+                    percent = string(rpercent)
+                 objective = "Stop in Docking Zone: " + percent + "%"
+            }
+        }
         else
         {
-            rpercent = floor(obj_physics_sensor.scale * 100)
-            if rpercent = 0
-                percent = "00"
-            else if rpercent &lt; 10
-                percent = "0" + string(rpercent)
-            else
-                percent = string(rpercent)
-             objective = "Stop in Docking Zone: " + percent + "%"
+            if global.target_count &gt; 0
+                objective = "Fire at and Hit Targets: " + string(global.targets_hit) + "/" + string(global.target_count)
+            else if global.ball_count &gt; 0
+                objective = "Collect Packeges: " + string(global.balls_collected) + "/" + string(global.ball_count)
+            else if global.battery_count &gt; 0
+                objective = "Charge Batteries: " + string(global.batteries_charged) + "/" + string(global.battery_count)
         }
     }
     else
-    {
-        if global.target_count &gt; 0
-            objective = "Fire at and Hit Targets: " + string(global.targets_hit) + "/" + string(global.target_count)
-        else if global.ball_count &gt; 0
-            objective = "Collect Packeges: " + string(global.balls_collected) + "/" + string(global.ball_count)
-        else if global.battery_count &gt; 0
-            objective = "Charge Batteries: " + string(global.batteries_charged) + "/" + string(global.battery_count)
-    }
+        objective = "Fly Aimlessly"
+        
+    if instance_exists(obj_ship_crashed)
+        objective = "Press any key to continue"
+    xview = view_xview[0] + round(1280 * global.zoom)
+    yview = view_yview[0] + round((50 + 32) * global.zoom)
+    scale = global.zoom
+    draw_sprite(spr_objective,0,xview, yview)
+    
+    font_set(font48,fa_center,fa_bottom,c_white)
+    draw_text(xview, yview + 32,string(objective))
 }
-else
-    objective = "Fly Aimlessly"
-xview = view_xview[0] + round(1280 * global.zoom)
-yview = view_yview[0] + round((50 + 32) * global.zoom)
-scale = global.zoom
-draw_sprite(spr_objective,0,xview, yview)
-
-font_set(font48,fa_center,fa_bottom,c_white)
-draw_text(xview, yview + 32,string(objective))
 </string>
           </argument>
         </arguments>
@@ -531,8 +565,11 @@ draw_text(xview, yview + 32,string(objective))
           <argument>
             <kind>1</kind>
             <string>///Draw FPS
-font_set(font12,fa_left,fa_middle,c_white)
-draw_text(view_xview[0] + 16, view_yview[0] + 16, "FPS = " + string(dfps));
+if global.UIToggle = 1
+{
+    font_set(font12,fa_left,fa_middle,c_white)
+    draw_text(view_xview[0] + 16, view_yview[0] + 16, "FPS = " + string(dfps));
+}
 </string>
           </argument>
         </arguments>
@@ -554,7 +591,8 @@ draw_text(view_xview[0] + 16, view_yview[0] + 16, "FPS = " + string(dfps));
           <argument>
             <kind>1</kind>
             <string>///Objective Arrow
-if global.zone != 0
+if global.zone != 0 and !instance_exists(obj_ship_crashed) and global.UIToggle = 1
+{
     width = 60
     scale = 0.9
     if global.targets_hit != global.target_count or global.balls_collected != global.ball_count or global.batteries_charged != global.battery_count
@@ -637,7 +675,8 @@ if global.zone != 0
                     draw_sprite_ext(spr_docking_arrow,0,view_xview[0] + dx, view_yview[0] + dy,scale,scale,angle,image_blend,image_alpha)
             }
         }
-    }   
+    }
+}
 </string>
           </argument>
         </arguments>

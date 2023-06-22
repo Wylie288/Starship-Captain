@@ -93,6 +93,7 @@ application_surface_enable(true)
 global.vibrator = Haptics_HasVibrator()
 global.editor = 0
 global.editor_selected = noone
+global.UIToggle = 1
 
 global.version = "Beta 0.9A"
 global.androidDebug = 0
@@ -160,8 +161,8 @@ ini_open(global.options_file)
     global.controls_vector = ini_read_real("controls","vector",0)
     global.control_mirror = ini_read_real("controls","mirror",0)
     global.alternate_key = ini_read_real("controls","alternate_key",0)
-    global.zoom_toggle = ini_read_real("camera","zoom",1)
-    global.pan_toggle = ini_read_real("camera","pan",1)
+    global.zoom_toggle = ini_read_real("camera","zoom",0)
+    global.pan_toggle = ini_read_real("camera","pan",0)
 ini_close()
 
 global.fric = 0

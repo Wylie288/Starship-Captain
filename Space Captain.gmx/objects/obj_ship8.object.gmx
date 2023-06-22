@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///Inherit
 phy_fixed_rotation = 1
+fixed_rot = 1
 event_inherited()
 </string>
           </argument>
@@ -49,7 +50,7 @@ event_inherited()
           <argument>
             <kind>1</kind>
             <string>///Initialize
-force = 3000
+force = 2000
 thrusters_sprite = spr_ship8
 </string>
           </argument>
@@ -74,25 +75,25 @@ thrusters_sprite = spr_ship8
             <string>///Thruster Properties
 i = 0 //Down
 thrustProp[i,ikey] = "S"
-thrustProp[i,ikey2] = "S"
+thrustProp[i,ikey2] = "W"
 thrustProp[i,iangle] = 270
 thrustProp[i,irot] = 0
 
 i = 1 //Left
 thrustProp[i,ikey] = "D"
-thrustProp[i,ikey2] = "W"
+thrustProp[i,ikey2] = "A"
 thrustProp[i,iangle] = 0
 thrustProp[i,irot] = 0
 
 i = 2 //Up-Right
 thrustProp[i,ikey] = "E"
-thrustProp[i,ikey2] = "D"
+thrustProp[i,ikey2] = "S"
 thrustProp[i,iangle] = 45
 thrustProp[i,irot] = 0
 
 i = 3 //Up-Left
 thrustProp[i,ikey] = "Q"
-thrustProp[i,ikey2] = "A"
+thrustProp[i,ikey2] = "D"
 thrustProp[i,iangle] = 135
 thrustProp[i,irot] = 0
 

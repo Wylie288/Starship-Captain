@@ -3,7 +3,7 @@
   <caption></caption>
   <width>9000</width>
   <height>7680</height>
-  <vsnap>32</vsnap>
+  <vsnap>16</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
@@ -483,6 +483,9 @@
     <instance objName="obj_wall256" x="7168" y="6400" name="inst_908DD011" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall256" x="6400" y="6272" name="inst_00C81936" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall256" x="6784" y="6528" name="inst_968EBA65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tut_targets" x="4128" y="4240" name="inst_B002A087" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_gravity_warning" x="1536" y="5360" name="inst_9BD56F88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_gravity_warning" x="2080" y="6208" name="inst_F2031D89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="station_back256" x="3584" y="4864" w="256" h="256" xo="0" yo="0" id="10006339" name="inst_DBAF190A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -865,6 +868,12 @@
     <tile bgName="back_girder" x="4032" y="3648" w="128" h="129" xo="0" yo="0" id="10009003" name="inst_4DD48E9B" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="back_girder" x="4608" y="3840" w="128" h="129" xo="0" yo="0" id="10009004" name="inst_2A85CAB4" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="back_girder" x="4032" y="3520" w="128" h="129" xo="0" yo="0" id="10009005" name="inst_AFE1A4D3" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tile_GravLineHor" x="2112" y="6144" w="64" h="64" xo="0" yo="0" id="10009425" name="inst_01FD3028" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tile_GravLineHor" x="2176" y="6144" w="64" h="64" xo="0" yo="0" id="10009426" name="inst_0BECEC24" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tile_GravLineHor" x="2240" y="6144" w="64" h="64" xo="0" yo="0" id="10009427" name="inst_3BA5E70D" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tile_GravLineVert" x="1792" y="5440" w="64" h="64" xo="0" yo="0" id="10009428" name="inst_05E4326F" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tile_GravLineVert" x="1792" y="5376" w="64" h="64" xo="0" yo="0" id="10009429" name="inst_DBB2714E" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tile_GravLineVert" x="1792" y="5312" w="64" h="64" xo="0" yo="0" id="10009430" name="inst_DA5BBA06" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>-1</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

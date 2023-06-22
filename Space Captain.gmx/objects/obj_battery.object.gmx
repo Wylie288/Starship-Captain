@@ -51,7 +51,15 @@ global.batteries_charged = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.battery_count += 1
+            <string>oid = global.battery_count
+global.battery_count += 1
+
+with(obj_control)
+{
+    objectivesComplete = 0
+    objectiveState[other.oid, 0] = other.id
+    objectiveState[other.oid, 1] = other.charge
+}
 </string>
           </argument>
         </arguments>

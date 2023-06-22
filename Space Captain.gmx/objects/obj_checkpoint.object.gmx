@@ -89,6 +89,30 @@ image_speed = 0
         count += 1
         global.checkpointX = x
         global.checkpointY = y
+        
+        with (obj_control)
+        {
+            if instance_exists(obj_target)
+                objectivesComplete = global.targets_hit
+            if instance_exists(obj_battery)
+                objectivesComplete = global.batteries_charged
+        
+        
+            i = 0
+            repeat(15)
+            {        
+                instance = objectiveState[i, 0]
+                
+                if instance = -1
+                    exit
+                
+                if instance_exists(obj_target)
+                    objectiveState[i, 1] = instance.image_index
+                 if instance_exists(obj_battery)
+                    objectiveState[i, 1] = instance.charge
+            }
+        }
+        
     }
 }
 else

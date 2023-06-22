@@ -28,6 +28,7 @@
             <string>image_speed = 0
 global.target_count = 0
 global.targets_hit = 0
+    
 </string>
           </argument>
         </arguments>
@@ -51,7 +52,17 @@ global.targets_hit = 0
           <argument>
             <kind>1</kind>
             <string>///Initialize
+oid = global.target_count
 global.target_count += 1
+
+
+with(obj_control)
+{
+    objectivesComplete = 0
+    objectiveState[other.oid, 0] = other.id
+    objectiveState[other.oid, 1] = other.image_index
+}
+    
 </string>
           </argument>
         </arguments>

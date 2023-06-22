@@ -27,19 +27,18 @@
             <kind>1</kind>
             <string>font_set(font36,fa_right,fa_center,c_white)
 draw_set_color(make_color_rgb(185,172,11))
-draw_text(x + 1340,y + 140,"Gold:")
+draw_text(x + 1340 + 220,y + 140,"Gold:")
 draw_set_color(make_color_rgb(139,139,139))
-draw_text(x + 1340,y + 140 + 100,"Silver:")
+draw_text(x + 1340 + 220,y + 140 + 100,"Silver:")
 draw_set_color(make_color_rgb(133,113,69))
-draw_text(x + 1340,y + 140 + 200,"Bronze:")
+draw_text(x + 1340 + 220,y + 140 + 200,"Bronze:")
 
 font_set(font36,fa_left,fa_center,c_white)
 draw_set_color(make_color_rgb(255,255,255))
-draw_text(x + 1350,y + 140, time_string(global.levelData[global.level,2] * GOLD))
-draw_text(x + 1350,y + 140 + 100, time_string(global.levelData[global.level,2] * SILVER))
-draw_text(x + 1350,y + 140 + 200, time_string(global.levelData[global.level,2] * BRONZE))
-
-if 1// scr_gold_stars() &gt;= floor(global.levelcount[global.zone] * (2/3))
+draw_text(x + 1350 + 220,y + 140, time_string(global.levelData[global.level,2] * GOLD))
+draw_text(x + 1350 + 220,y + 140 + 100, time_string(global.levelData[global.level,2] * SILVER))
+draw_text(x + 1350 + 220,y + 140 + 200, time_string(global.levelData[global.level,2] * BRONZE))/*
+if 0// scr_gold_stars() &gt;= floor(global.levelcount[global.zone] * (2/3))
 {
     font_set(font36,fa_right,fa_center,c_white)
     draw_set_color(make_color_rgb(185,40,40))
@@ -59,26 +58,26 @@ else
 {
      font_set(font48,fa_center,fa_center,c_white)
         draw_text(x + 1235,y + 40 + 100, "Earn " + string(floor(global.levelcount[global.zone] * (2/3)) - scr_gold_stars()) + " Gold#medals to unlock#master medal times")
-}
+}*/
 
 
 font_set(font54,fa_center,fa_center,c_white)
 draw_text(1632, y+ 440 + 165, "Personal Best:")
 
-if scr_medal(1)
-    draw_set_color(make_color_rgb(64,255,255))
-else if scr_medal(RUBY)
-    draw_set_color(make_color_rgb(185,40,40))
-else if scr_medal(SAPPHIRE)
-    draw_set_color(make_color_rgb(40,40,185))
-else if scr_medal(EMERALD)
-    draw_set_color(make_color_rgb(40,185,40))
-else if scr_medal(GOLD)
+//if scr_medal(1)
+    //draw_set_color(make_color_rgb(64,255,255))
+if scr_medal(GOLD)
     draw_set_color(make_color_rgb(185,172,11))
 else if scr_medal(SILVER)
     draw_set_color(make_color_rgb(139,139,139))
 else if scr_medal(BRONZE)
     draw_set_color(make_color_rgb(133,113,69))
+/*else if scr_medal(RUBY)
+    draw_set_color(make_color_rgb(185,40,40))
+else if scr_medal(SAPPHIRE)
+    draw_set_color(make_color_rgb(40,40,185))
+else if scr_medal(EMERALD)
+    draw_set_color(make_color_rgb(40,185,40))*/
 
 ini_open(global.normal_times_file)
 time = ini_read_real(string(global.zone),string(global.level),99999)

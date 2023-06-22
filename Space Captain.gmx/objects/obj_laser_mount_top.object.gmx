@@ -99,15 +99,15 @@ if ((inView = 1) and (laserControl.channel = channel)){
     endPointCurrent = checkEndPoint(sourceX, sourceY, angle, length + 1) //Return object ID at end point or 0 if none. +1 to account for rounding/floating point errors
     endPointDifference = endPointOld - endPointCurrent 
     
-    if endPointCurrent = 0 //Prevents a scenario where it might take 6 ticks to detect a collision, as hit boxes are only scaled by 3.
+    if (endPointCurrent = 0) //Prevents a scenario where it might take 6 ticks to detect a collision, as hit boxes are only scaled by 3.
         length = maxLength
+        
     betweenPoint = checkLine(sourceX, sourceY, angle, length - 1) // -1 to exclude current collision
     
-    if ((endPointCurrent != 0) or (betweenPoint != 0))
+    if ((endPointDifference != 0) or (betweenPoint != 0))
         length = findCollisionPoint(sourceX, sourceY, angle, length)
         
     endPointOld = endPointCurrent
-    colWait = 1
 }
 </string>
           </argument>
@@ -151,11 +151,18 @@ if view = 1
         {
             if fire = 1
             {
-                with (obj_ship)
-                    lose_star()
-                ship = 1
-                display = 7
-                fire = 0
+                if !instance_exists(obj_ship_crashed)
+                {
+                    with (obj_ship)
+                    {
+                        instance_create(0,0, obj_ship_crashed)
+                        lose_star()
+                        phy_fixed_rotation = 0
+                    }
+                }
+                //ship = 1
+                //display = 0
+                //fire = 1
             }
         }
     }

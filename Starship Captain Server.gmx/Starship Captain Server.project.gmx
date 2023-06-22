@@ -14,7 +14,6 @@
     <script>scripts\get_time_file.gml</script>
     <script>scripts\write_log.gml</script>
   </scripts>
-  <shaders name="shaders"/>
   <fonts name="fonts">
     <font>fonts\font0</font>
   </fonts>

@@ -49,6 +49,15 @@ if room = rm_Intermediate3
     
 instance_create(0, 0, obj_laser_control)
 
+objectivesComplete = 0
+i = 0
+repeat(15)
+{
+    objectiveState[i, 0] = -1
+    objectiveState[i, 1] = -1
+    i++
+}
+
 </string>
           </argument>
         </arguments>
@@ -112,7 +121,7 @@ if global.online = 1
         </arguments>
       </action>
     </event>
-    <event eventtype="10" enumb="32">
+    <event eventtype="1" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -129,7 +138,37 @@ if global.online = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Pause
+            <string>ds_list_destroy(global.checkpointList)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="85">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>switch (global.UIToggle)
+{
+    case 1: global.UIToggle = 0; break;
+    case 0: global.UIToggle = 1; break;
+}
+ 
+
+///Pause
 /*
 // The game always draws to the "application_surface" (see docs for more info).
 var width = surface_get_width(application_surface),
@@ -144,6 +183,33 @@ room_persistent = true;
 
 global.RoomBeforePause = room;
 room_goto(rm_pause);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="80">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>date = date_current_datetime()
+year = date_get_year(date)
+second = date_get_second_of_year(date)
+screenName = string(year) + "_" + string(second) + ".png"
+screen_save("screens/"+screenName)
 </string>
           </argument>
         </arguments>

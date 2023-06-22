@@ -10,14 +10,14 @@
     {
         global.ship = "3"
         if global.levelData[global.level,iship] = "3"
-            global.ship = "4"
+            global.ship = "6"
     }
      
     Aship[1] = 3 
-    Aship[2] = 4 
+    Aship[2] = 6
     Aship[3] = 5 
-    Aship[4] = 6 
-    Aship[5] = 7 
+    Aship[4] = 7 
+    Aship[5] = 8//12
     //Aship[6] = 8 
     //Aship[7] = 9 
     //Aship[8] = 12

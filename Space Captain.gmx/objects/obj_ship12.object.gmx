@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Inherit
+fixed_rot = 1
 phy_fixed_rotation = 1
 event_inherited()
 </string>
@@ -49,7 +50,7 @@ event_inherited()
           <argument>
             <kind>1</kind>
             <string>///Initialize
-force = 3000
+force = 2000
 thrusters_sprite = spr_ship12
 </string>
           </argument>

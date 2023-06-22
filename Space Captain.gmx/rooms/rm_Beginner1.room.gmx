@@ -3,8 +3,8 @@
   <caption></caption>
   <width>13000</width>
   <height>8400</height>
-  <vsnap>64</vsnap>
-  <hsnap>64</hsnap>
+  <vsnap>32</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -696,6 +696,14 @@
     <instance objName="obj_electric" x="8704" y="1152" name="inst_BF6E22EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_electric" x="8704" y="1216" name="inst_83B29B02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_electric" x="8704" y="1280" name="inst_8626FC8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tut_controls" x="4352" y="4224" name="inst_2A06361A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tut_docking" x="3712" y="6400" name="inst_027B46A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tut_losing_stars" x="4928" y="4928" name="inst_C3D1096E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magnetic_field" x="1312" y="4800" name="inst_A27B0CB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tut_checkpoint" x="2144" y="6400" name="inst_40E90BBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_gravity_warning" x="4160" y="1856" name="inst_8B3E8217" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_gravity_warning" x="5504" y="1856" name="inst_51F01580" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_gravity_warning" x="7936" y="1184" name="inst_D1D3157E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="station_back256" x="4224" y="4096" w="256" h="256" xo="0" yo="0" id="10002955" name="inst_BEA9A5BB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -892,7 +900,6 @@
     <tile bgName="station_back256" x="5888" y="768" w="256" h="256" xo="0" yo="0" id="10008644" name="inst_D237BAB0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="station_back256" x="5888" y="1024" w="256" h="256" xo="0" yo="0" id="10008647" name="inst_076987B6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="station_back256" x="6144" y="768" w="256" h="256" xo="0" yo="0" id="10008649" name="inst_3A26275F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="station_back256" x="6144" y="1024" w="256" h="256" xo="0" yo="0" id="10008650" name="inst_52685C3D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="station_back256" x="6144" y="1280" w="256" h="256" xo="0" yo="0" id="10008651" name="inst_AEE81802" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="station_back256" x="5888" y="1280" w="256" h="256" xo="0" yo="0" id="10008652" name="inst_717ED6C3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="station_back256" x="5888" y="1536" w="256" h="256" xo="0" yo="0" id="10008653" name="inst_BD3EA899" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -950,6 +957,9 @@
     <tile bgName="back_girder" x="7232" y="4224" w="128" h="129" xo="0" yo="0" id="10008932" name="inst_7B19D6F0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="back_girder" x="7232" y="4096" w="128" h="129" xo="0" yo="0" id="10008933" name="inst_65938113" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="back_girder" x="7232" y="3968" w="128" h="129" xo="0" yo="0" id="10008934" name="inst_28F124A7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="station_back256" x="6432" y="1184" w="256" h="256" xo="0" yo="0" id="10009431" name="inst_3CA969B7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="station_back256" x="6400" y="1024" w="256" h="256" xo="0" yo="0" id="10009433" name="inst_337DCF13" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="station_back256" x="6144" y="1024" w="256" h="256" xo="0" yo="0" id="10009434" name="inst_AAB27B8E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_SpaceFill" x="2432" y="5824" w="128" h="128" xo="0" yo="0" id="10008709" name="inst_3ADA71C8" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_SpaceFill" x="2304" y="5824" w="128" h="128" xo="0" yo="0" id="10008710" name="inst_B3A08694" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_SpaceFill" x="2176" y="5824" w="128" h="128" xo="0" yo="0" id="10008711" name="inst_67AD16CD" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

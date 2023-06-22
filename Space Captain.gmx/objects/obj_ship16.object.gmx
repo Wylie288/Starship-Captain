@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Inherit
+fixed_rot = 0
 image_speed = 0
 global.temp = 1
 event_inherited()
@@ -50,7 +51,7 @@ event_inherited()
           <argument>
             <kind>1</kind>
             <string>///Initialization
-force = 3000
+force = 2000
 if global.alternate_key = 0
     phy_rotation = 180
 thrusters_sprite = spr_ship16

@@ -90,6 +90,7 @@ if global.online = 1
           <argument>
             <kind>1</kind>
             <string>///Ironman
+/*
 ex = 0
 if global.zone = 4
 {
@@ -157,6 +158,7 @@ if global.zone != 4 or (global.zone = 4 and ex = 1)
             if ini_read_real(string(global.zone),string(global.level),9999) &gt; global.timer
             {
                 ini_write_real(string(global.zone),string(global.level),global.timer)
+                if global.online = 1
                 send_record()
             }
         ini_close()
