@@ -88,8 +88,6 @@
             <string>if global.ship = "A"
     draw_sprite(spr_button_ship_selected,0,x,y)
 
-draw_sprite(spr_ship_menu,0,x,y)
-
 draw_set_valign(fa_bottom)
 draw_set_halign(fa_left)
 draw_set_font(font54)

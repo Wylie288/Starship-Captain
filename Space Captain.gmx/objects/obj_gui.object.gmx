@@ -420,8 +420,8 @@ if global.zone != 0 and !instance_exists(obj_ship_crashed) and global.UIToggle =
 
 if global.zone = 0
 {
-    xview = view_xview[0] + round((2560 - 155 - 32) * global.zoom)
-    yview = view_yview[0] + round((50 + 32) * global.zoom)
+    xview = view_xview[0] + ((2560 - 155 - 32) * global.zoom)
+    yview = view_yview[0] + ((50 + 32) * global.zoom)
     draw_sprite(spr_star_grid,0,xview,yview)
     font_set(font48,fa_center,fa_bottom,c_white)
     draw_text(xview, yview + 32,string(global.hits))
@@ -471,8 +471,8 @@ if global.zone != 0 and !instance_exists(obj_ship_crashed) and global.UIToggle =
             time = seconds
         }
         
-        xview = view_xview[0] + round((2560 - 155 - 32) * global.zoom)
-        yview = view_yview[0] + round((50 + 32) * global.zoom)
+        xview = view_xview[0] + ((2560 - 155 - 32) * global.zoom)
+        yview = view_yview[0] + ((50 + 32) * global.zoom)
         scale = global.zoom
         draw_sprite(spr_star_grid,0,xview, yview)
         
@@ -536,8 +536,8 @@ if global.UIToggle = 1
         
     if instance_exists(obj_ship_crashed)
         objective = "Press any key to continue"
-    xview = view_xview[0] + round(1280 * global.zoom)
-    yview = view_yview[0] + round((50 + 32) * global.zoom)
+    xview = view_xview[0] + (1280 * global.zoom)
+    yview = view_yview[0] + ((50 + 32) * global.zoom)
     scale = global.zoom
     draw_sprite(spr_objective,0,xview, yview)
     

@@ -64,8 +64,6 @@
             <kind>1</kind>
             <string>if global.ship = "D"
     draw_sprite(spr_button_ship_selected,0,x,y)
-
-draw_sprite(spr_ship_menu,3,x,y)
 </string>
           </argument>
         </arguments>

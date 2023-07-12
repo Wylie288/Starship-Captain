@@ -1,4 +1,5 @@
 /// blur_create_exit(width, height)
+var w, h
 argument0 = w
 argument1 = h
 

@@ -37,9 +37,6 @@ if global.zone = 2
 if global.zone = 3
     sprite_index = spr_level_preview_3
     
-if global.zone = 100
-    sprite_index = spr_level_preview_100
-    
 image_speed = 0
 </string>
           </argument>

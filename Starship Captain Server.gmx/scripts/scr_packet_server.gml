@@ -100,7 +100,7 @@ level = buffer_read(buffer, buffer_u8)
 record = buffer_read(buffer, buffer_f64)
 name = buffer_read(buffer, buffer_string)
 
-ini_open("High Scores/" + string(zone) + "/" + string(level))
+ini_open("Records/" + "Zone_"+string(zone) + "/" + "Level_"+string(level))
     count = ini_read_real("count","count",0)
     
     written = 0
@@ -134,7 +134,7 @@ zone = buffer_read(buffer, buffer_u8)
 level = buffer_read(buffer, buffer_u8)
 name = buffer_read(buffer, buffer_string)
 
-ini_open("High Scores/" + string(zone) + "/" + string(level))
+ini_open("Records/" + "Zone_"+string(zone) + "/" + "Level_"+string(level))
     count = ini_read_real("count","count",0)
     
     i = 0
@@ -167,7 +167,7 @@ level = buffer_read(buffer, buffer_u8)
 buffer_seek(global.buffer, buffer_seek_start, 0)
 buffer_write(global.buffer,buffer_u8,GETBOARD)
 
-ini_open("High Scores/" + string(zone) + "/" + string(level))
+ini_open("Records/" + "Zone_"+string(zone) + "/" + "Level_"+string(level))
 count = ini_read_real("count","count",0)
 buffer_write(global.buffer,buffer_u32,count)
     i = 0
@@ -206,7 +206,7 @@ ix = buffer_read(buffer, buffer_u32)
 iy = buffer_read(buffer, buffer_u32)
 dir = buffer_read(buffer, buffer_u32)
 
-ini_open("Metrics/Star Losses/" + string(zone) + "/" + string(level))
+ini_open("Metrics/Star Losses/" + "Zone_"+string(zone) + "/" + "Level_"+string(level))
     count = ini_read_real("count","count",0)
     
     ini_write_real(string(count),"X",ix)

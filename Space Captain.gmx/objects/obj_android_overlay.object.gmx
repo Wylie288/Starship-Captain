@@ -56,7 +56,7 @@ if mirror = 1
     x = view_xview[0]
 if mirror = -1
     x = view_xview[0] + 2560
-y = view_yview[0] + round(1440 * global.zoom)
+y = view_yview[0] + (1440 * global.zoom)
 
 draw_self()
 </string>

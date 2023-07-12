@@ -61,7 +61,7 @@ mouse_device = 0
 image_xscale = global.zoom
 image_yscale = global.zoom
 
-x = view_xview[0] + round(drawx * global.zoom)
+x = view_xview[0] + (drawx * global.zoom)
 
 if (global.controls_type = 2) and ((global.ship = "2") or (global.ship = "A"))
     y = view_yview[0] + ((1280 - drawy) * global.zoom)

@@ -369,7 +369,6 @@
         <script>scripts\LoadLevel.gml</script>
       </scripts>
     </scripts>
-    <script>scripts\script47.gml</script>
     <script>scripts\checkPointRestore.gml</script>
   </scripts>
   <shaders name="shaders">

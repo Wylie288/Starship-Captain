@@ -142,7 +142,7 @@ if global.zone = 4
           <argument>
             <kind>1</kind>
             <string>///Save
-if global.zone != 4 or (global.zone = 4 and ex = 1)
+if global.zone != 4 //or (global.zone = 4 and ex = 1)
 {
     if global.game_mode = "Normal"
     {

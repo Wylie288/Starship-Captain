@@ -29,7 +29,7 @@
 image_yscale = global.zoom
 
 x = view_xview[0]
-y = view_yview[0] + round(1440 * global.zoom)
+y = view_yview[0] + (1440 * global.zoom)
 </string>
           </argument>
         </arguments>

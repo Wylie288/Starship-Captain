@@ -88,8 +88,8 @@ if global.UIeditorslider = 1
 image_xscale = global.zoom
 image_yscale = global.zoom
 
-x = view_xview[0] + round(drawx * global.zoom)
-y = view_yview[0] + round(view_hview[0] - (drawy * global.zoom))
+x = view_xview[0] + (drawx * global.zoom)
+y = view_yview[0] + (view_hview[0] - (drawy * global.zoom))
 </string>
           </argument>
         </arguments>
