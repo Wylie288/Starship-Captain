@@ -97,7 +97,6 @@ if ds_exists(global.board, ds_type_grid)
     ds_grid_destroy(global.board)
 
 count = buffer_read(buffer, buffer_u32)
-show_debug_message("Board Updated")
 global.board = ds_grid_create(2,count)
 
 i = 0

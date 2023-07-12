@@ -1,6 +1,5 @@
 #define findCollisionPoint
 ///findCollisionPoint(sourceX, sourceY, angle, length)
-//Var keyword is the closest thing to local scope in GM. It overrides instance variables. I prepend _ to ensure no instance variables are accidently removed.
 var _sourceX = argument0
 var _sourceY = argument1
 var _angle = argument2
@@ -14,7 +13,7 @@ var _newLength
 var _foundCollision = false
 
 while( abs(_testLength) > 1) {
-    _testLength /= 2
+    _testLength *= 0.5
 
     if (checkLine(_testX, _testY, _angle, _testLength)) = 0{
         

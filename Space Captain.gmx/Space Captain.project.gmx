@@ -283,6 +283,8 @@
     <sprite>sprites\sprite158</sprite>
     <sprite>sprites\spr_death_fade</sprite>
     <sprite>sprites\sprite161</sprite>
+    <sprite>sprites\spr_procTex</sprite>
+    <sprite>sprites\sprite163</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_space</background>
@@ -377,6 +379,7 @@
       <shader type="GLSLES">shaders\shd_gaussian_vertical.shader</shader>
       <shader type="GLSLES">shaders\shd_blur.shader</shader>
     </shaders>
+    <shader type="GLSLES">shaders\sha_mask.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\font12</font>
@@ -712,6 +715,7 @@
     </objects>
     <object>objects\obj_gravityField</object>
     <object>objects\obj_laser_control</object>
+    <object>objects\obj_shader_control</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game_start</room>

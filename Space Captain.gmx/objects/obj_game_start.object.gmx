@@ -150,7 +150,7 @@ global.options_file = "options"
 ini_open(global.options_file)
     global.music_play = ini_read_real("music","play",1)
     global.master_volume = ini_read_real("master","volume",1)
-    global.music_volume = ini_read_real("music","volume",1)
+    global.music_volume = ini_read_real("music","volume",0.7)
     global.sound_effect_volume = ini_read_real("sound","volume",1)
     global.vibration_collision = ini_read_real("vibration","collision",1)
     global.assist_mode = ini_read_real("assist_mode","toggle",0)

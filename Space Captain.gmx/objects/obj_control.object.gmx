@@ -48,6 +48,7 @@ if room = rm_Intermediate3
     random_set_seed(2);
     
 instance_create(0, 0, obj_laser_control)
+instance_create(0, 0, obj_shader_control)
 
 objectivesComplete = 0
 i = 0

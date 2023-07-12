@@ -469,11 +469,11 @@
     <option_textureGroup2_nocropping>0</option_textureGroup2_nocropping>
     <option_textureGroup2_parent>&lt;none&gt;</option_textureGroup2_parent>
     <option_textureGroup2_scaled>0</option_textureGroup2_scaled>
-    <option_textureGroup2_targets>745570506</option_textureGroup2_targets>
+    <option_textureGroup2_targets>544211048</option_textureGroup2_targets>
     <option_textureGroup_count>3</option_textureGroup_count>
     <option_textureGroups0>Default</option_textureGroups0>
     <option_textureGroups1>Archive</option_textureGroups1>
-    <option_textureGroups2>Texels</option_textureGroups2>
+    <option_textureGroups2>Shader</option_textureGroups2>
     <option_tizen_app_id>http://yourdomain/Space_Captain</option_tizen_app_id>
     <option_tizen_build_version>0</option_tizen_build_version>
     <option_tizen_display_name>Space Captain</option_tizen_display_name>
