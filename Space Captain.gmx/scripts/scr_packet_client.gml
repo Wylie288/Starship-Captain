@@ -48,13 +48,8 @@ alarm[0] = 0
     
     if global.uname = ""
     {
-        show_debug_message("New User")
-        create_name()
-        buffer_seek(global.buffer, buffer_seek_start, 0)
-        buffer_write(global.buffer,buffer_u8,NAME)
-        buffer_write(global.buffer,buffer_string,global.uname)
-        buffer_write(global.buffer,buffer_u8,1)
-        network_send_packet(global.socket,global.buffer,buffer_tell(global.buffer))
+        name_ok = 0
+        askName()
     }
     else
     {
@@ -65,8 +60,6 @@ alarm[0] = 0
         network_send_packet(global.socket,global.buffer,buffer_tell(global.buffer))
         version_check()
     }
-    
-    show_debug_message(global.uname)
 
 #define scr_nametaken
 buffer = argument0

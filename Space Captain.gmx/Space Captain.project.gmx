@@ -334,6 +334,7 @@
     <scripts name="Networking">
       <script>scripts\scr_packet_client.gml</script>
       <script>scripts\create_name.gml</script>
+      <script>scripts\createNameBack.gml</script>
       <script>scripts\send_record.gml</script>
       <script>scripts\get_record.gml</script>
       <script>scripts\get_board.gml</script>
